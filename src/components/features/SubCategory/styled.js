@@ -25,9 +25,9 @@ h2{font-size: 36px;line-height: 42px;color: #262F3D;margin-bottom:40px;font-weig
 .react-tabs__tab:focus{box-shadow:none;}
 .react-tabs__tab--selected{color: #00CC88;font-weight: 700;}
 .react-tabs__tab.last_tab{margin-bottom:40px;}
-
 @media screen and (max-width: 767px) {
-display:none;
+display:none !important;
+
 }
 `
 export const TopText = styled.div`
@@ -121,5 +121,58 @@ span.is-open:after {background-image:url(${Arrow2});}
 .Collapsible__trigger{background: #FAFAFA;border-radius: 5px;font-weight: 700;font-size: 24px;
 line-height: 42px; color: #262F3D;padding:10px 15px;width:100%;display: inline-block;}
 .Collapsible__contentInner{margin:30px 0;padding:0 15px;font-weight:300;font-size:18px;line-height:24px;color: #405463;}
-
+.accordion {
+    list-style: none;
+  }
+  
+  .accordion_item {
+    border-top: 1px solid #9f9f9f;
+  }
+  
+  .button {
+    font-size: 16px;
+    background-color: #008593;
+    color: #fff;
+    text-align: left;
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .control {
+    width:40px !important;
+    height:40px !important;
+    background: rgba(189, 207, 240, 0.15);
+    border-radius: 50%;
+    cursor:pointer;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:45%;
+    background-image:url(${Arrow2});
+    transition: transform .7s ease-in-out;
+  }
+  .control.active{
+    padding-left:8px;
+    transform: rotate(180deg);
+  }
+  
+  .answer {
+    background-color: #f7f7f7;
+    padding: 20px;
+  }
+  
+  .accordion_item.active .button {
+    background-color: #105057;
+  }
+  .answer_wrapper {
+    height: 0;
+    overflow: hidden;
+    transition: height ease 0.2s;
+  }
 `

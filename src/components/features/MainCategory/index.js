@@ -86,7 +86,7 @@ export const query = graphql`
             category_title
             category_short_description
             category_image {
-              fluid(maxWidth: 540, maxHeight: 370) {
+              fluid(maxWidth: 540, maxHeight: 294) {
                 src
                 ...GatsbyPrismicImageFluid_noBase64
               }
