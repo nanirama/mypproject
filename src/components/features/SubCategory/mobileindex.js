@@ -1,16 +1,18 @@
 import React from "react";
 import Collapsible from "react-collapsible";
 import Image from "gatsby-image";
-import { Row, Col } from "react-flexbox-grid";
+import { CategoryBlock, ItemBox, TitleBox } from "./styled";
 
-import CategoryItem from '../CategoryItem'
+import PromotionIcon1 from "../../../assets/images/features/promotion-icon1.png";
+import ManagmentIcon1 from "../../../assets/images/features/managment-icon1.png";
+import ProductionIcon1 from "../../../assets/images/features/production-icon1.png";
+import IntegrationIcon1 from "../../../assets/images/features/integration-icon1.png";
 
-import { CategoryBlock, CategoryBlockM, ItemBox, TitleBox } from "./styled";
 
-const FeatureSubCategory = ({ data, viewFeatures }) => {
+const FeatureSubCategory = ({ data }) => {
   return (
     <>
-      {!viewFeatures && data && data.map((cat, index) => {
+      {data && data.map((cat, index) => {
         return (
           <CategoryBlock>
             <h6>{cat.primary.category_title}</h6>
@@ -19,7 +21,17 @@ const FeatureSubCategory = ({ data, viewFeatures }) => {
                 const subCats = sub.features_sub_category.document.data.body[0].items ? sub.features_sub_category.document.data.body[0].items : []
                 return (
                   <Collapsible trigger={sub.features_sub_category.document.data.category_title.text}>
-                    {subCats && subCats.map((scat, sindex) => <CategoryItem key={sindex} data={scat} />)}
+                    {subCats && subCats.map((scat, sindex) => {
+                      return (
+                        <ItemBox className="item">
+                          <TitleBox>
+                            {scat.feature_icon && <Image fixed={scat.feature_icon.fixed} />} 
+                            <h5>{scat.feature_title}</h5>
+                          </TitleBox>
+                          {scat.feature_description && <div dangerouslySetInnerHTML={{ __html: scat.feature_description.html }} ></div>}                                      
+                        </ItemBox>
+                      )
+                    })}
                   </Collapsible>
                 )
               }
@@ -28,27 +40,7 @@ const FeatureSubCategory = ({ data, viewFeatures }) => {
             }
           </CategoryBlock>
         )
-      })}
-      {viewFeatures && data && data.map((cat, index) => {
-        return (
-          <CategoryBlockM key={index}>
-            <h6>{cat.primary.category_title}</h6>
-            {
-              cat.items && cat.items.map((sub, subindex) => {
-                const subCats = sub.features_sub_category.document.data.body[0].items ? sub.features_sub_category.document.data.body[0].items : []
-                return (
-                  <div key={subindex}>
-                    <h2>{sub.features_sub_category.document.data.category_title.text}</h2>
-                    <Row>
-                      {subCats && subCats.map((scat, sindex) => <CategoryItem key={sindex} data={scat} />)}
-                    </Row>
-                  </div>
-                )
-              })
-            }
-          </CategoryBlockM>
-        )
-      })}
+      })}      
     </>
   );
 };

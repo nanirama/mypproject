@@ -31,24 +31,7 @@ display:none;
 }
 `
 export const TopText = styled.div`
-display:flex;
-margin-bottom:40px;
-align-items:center;
-flex-direction: row;
-@media screen and (min-width: 768px) {
-    justify-content: flex-start;
-}
-@media screen and (max-width: 767px) {
-    justify-content: space-between;
-}
-& > button{
-    border:none;
-    cursor:pointer;
-    background: rgba(255, 255, 255);border-radius: 75px;font-size: 13px;line-height: 18px;color: #637491;padding:10px 18px;
-}
-& > button.active{
-    background: rgba(189, 207, 240, 0.15);
-}
+display:flex;padding:0 8px;margin-bottom:40px;align-items:center;
 `
 export const SubTitle = styled.h5`
 font-weight: 700;font-size: 15px;line-height: 24px;color: #ADB8D4;margin-right:20px;
@@ -78,24 +61,6 @@ h5{font-weight: 700;font-size: 20px; line-height: 26px;color: #262F3D; margin-le
 .gatsby-image-wrapper, .icon{width:35px !important;height:35px !important;}
 
 `
-
-export const CategoryBlockM = styled.div`
-width:100%;
-float:left;
-@media screen and (min-width: 768px) {
-    display:none;
-}
-.item{margin:0;}
-
-h2 {
-    font-size: 36px;
-    line-height: 42px;
-    color: #262F3D;
-    margin-bottom: 40px;
-    font-weight: 300;
-}
-h6{font-size: 18px;line-height: 26px; color: #637491;font-weight: 400; margin-bottom:20px; margin-left:2px;}
-`
 export const CategoryBlock = styled.div`
 width:100%;
 float:left;
@@ -104,13 +69,6 @@ float:left;
 }
 .item{margin:0;}
 
-h2 {
-    font-size: 36px;
-    line-height: 42px;
-    color: #262F3D;
-    margin-bottom: 40px;
-    font-weight: 300;
-}
 h6{font-size: 18px;line-height: 26px; color: #637491;font-weight: 400; margin-bottom:20px; margin-left:14px;}
 
 .Collapsible{margin-bottom:15px;position:relative;

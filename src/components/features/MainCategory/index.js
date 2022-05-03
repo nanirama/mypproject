@@ -11,6 +11,8 @@ import { FeatureBlock, TopContent, Heading, Paragraph, FeatureItem } from "./sty
 import FeatureSubCategory from "../SubCategory";
 import BottomSection from "../BottomSection";
 
+import CategoryImg1 from "../../../assets/images/features/category-img1.png";
+
 const FeatureCategory = ({data}) => {
   const [ selectedIndex, setSelectedIndex ] = useState(0)
   var loopCount = 0;
@@ -42,6 +44,7 @@ const FeatureCategory = ({data}) => {
                 <Col lg={3} md={6} xs={12} key={index}>
                   <FeatureItem>
                     <Image fluid={cat.primary.category_image.fluid} alt={cat.primary.category_title} />
+                    {/* <img src={cat.primary.category_image.fluid} alt={cat.primary.category_title} /> */}
                     <AnchorLink href='#tabsection'><h4 onClick={(e)=>setSelectedIndex(loopArray[index])}>{cat.primary.category_title}</h4></AnchorLink>
                     <p>{cat.primary.category_short_description}</p>
                   </FeatureItem>
