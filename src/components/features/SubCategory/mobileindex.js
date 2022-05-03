@@ -6,8 +6,6 @@ import CategoryItem from '../CategoryItem'
 
 import AccordionItem from "./AccordionItem";
 
-import Dropdown from "./Dropdown";
-
 import { CategoryBlock, CategoryBlockM  } from "./styled";
 export const faqs = [
   {
