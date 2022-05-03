@@ -1,0 +1,381 @@
+{
+  "Main": {
+    "doc_id": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label": "Doc id"
+      }
+    },
+    "back": {
+      "type": "Text",
+      "config": {
+        "label": "Back button"
+      }
+    }
+  },
+  "Step 1": {
+    "title1": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label": "Title"
+      }
+    },
+    "subtitle": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label": "Subtitle"
+      }
+    },
+    "label_work_email": {
+      "type": "Text",
+      "config": {
+        "label": "label_work_email"
+      }
+    },
+    "placeholder_work_email": {
+      "type": "Text",
+      "config": {
+        "label": "placeholder_work_email"
+      }
+    },
+    "error_email_exist": {
+      "type": "Text",
+      "config": {
+        "label": "error_email_exist"
+      }
+    },
+    "step_1_email_exist_rich": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+        "label": "step_1_email_exist_rich"
+      }
+    },
+    "error_email_not_valid": {
+      "type": "Text",
+      "config": {
+        "label": "error_email_not_valid"
+      }
+    },
+    "rgpd_text": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+        "label": "RGPD policy"
+      }
+    },
+    "organizer_policy": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+        "label": "Organizer policy"
+      }
+    },
+    "step_1_submit": {
+      "type": "Text",
+      "config": {
+        "label": "step_1_submit"
+      }
+    },
+    "already_an_account": {
+      "type": "Text",
+      "config": {
+        "label": "already_an_account"
+      }
+    },
+    "link_account_slug": {
+      "type": "Text",
+      "config": {
+        "label": "link_account_slug"
+      }
+    },
+    "link_account_anchor": {
+      "type": "Text",
+      "config": {
+        "label": "link_account_anchor"
+      }
+    }
+  },
+  "Step 2": {
+    "title2": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label": "Title"
+      }
+    },
+    "subtitle1": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label": "Subtitle"
+      }
+    },
+    "number_of_attendees": {
+      "type": "Text",
+      "config": {
+        "label": "Number of Attendees"
+      }
+    },
+    "type_of_event": {
+      "type": "Text",
+      "config": {
+        "label": "Type of event"
+      }
+    },
+    "has_sponsors_": {
+      "type": "Text",
+      "config": {
+        "label": "Has Sponsors?"
+      }
+    },
+    "step_2_number_of_sponsors": {
+      "type": "Text",
+      "config": {
+        "label": "step_2_number_of_sponsors"
+      }
+    },
+    "submit_button1": {
+      "type": "Text",
+      "config": {
+        "label": "Submit button"
+      }
+    },
+    "step_2_error": {
+      "type": "Text",
+      "config": {
+        "label": "step_2_error"
+      }
+    }
+  },
+  "Step 3": {
+    "title3": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label": "Title"
+      }
+    },
+    "subtitle2": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+        "label": "Subtitle"
+      }
+    },
+    "firstname": {
+      "type": "Text",
+      "config": {
+        "label": "firstName"
+      }
+    },
+    "lastname": {
+      "type": "Text",
+      "config": {
+        "label": "lastName"
+      }
+    },
+    "phonenumber": {
+      "type": "Text",
+      "config": {
+        "label": "phoneNumber"
+      }
+    },
+    "password": {
+      "type": "Text",
+      "config": {
+        "label": "password"
+      }
+    },
+    "step_3_password_placeholder": {
+      "type": "Text",
+      "config": {
+        "label": "step_3_password_placeholder"
+      }
+    },
+    "password_validation_length": {
+      "type": "Text",
+      "config": {
+        "label": "password_validation_length"
+      }
+    },
+    "submit_button2": {
+      "type": "Text",
+      "config": {
+        "label": "submit button"
+      }
+    },
+    "error_occured": {
+      "type": "Text",
+      "config": {
+        "label": "error_occured"
+      }
+    }
+  },
+  "Sidebar": {
+    "logorepeat": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "logo": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "logo"
+            }
+          }
+        },
+        "label": "logoRepeat"
+      }
+    },
+    "body1": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "choices": {
+          "sidebar_item": {
+            "type": "Slice",
+            "fieldset": "Sidebar item",
+            "description": "Sidebar content",
+            "icon": "call_to_action",
+            "display": "list",
+            "non-repeat": {},
+            "repeat": {
+              "picture": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Picture"
+                }
+              },
+              "template": {
+                "type": "Select",
+                "config": {
+                  "options": ["Quote", "Events"],
+                  "label": "Template"
+                }
+              },
+              "sidebar_line_1": {
+                "type": "Text",
+                "config": {
+                  "label": "Sidebar_line_1"
+                }
+              },
+              "sidebar_line_2": {
+                "type": "Text",
+                "config": {
+                  "label": "Sidebar_line_2"
+                }
+              },
+              "sidebar_line_3": {
+                "type": "Text",
+                "config": {
+                  "label": "Sidebar_line_3"
+                }
+              },
+              "sidebar_line_4": {
+                "type": "Text",
+                "config": {
+                  "label": "Sidebar_line_4"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Step 4": {
+    "step_4_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label": "step_4_title"
+      }
+    },
+    "step_4_body": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+        "label": "step_4_body"
+      }
+    }
+  },
+  "Meta": {
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "choices": {
+          "meta": {
+            "type": "Slice",
+            "fieldset": "Meta",
+            "description": "All meta needed for configuration",
+            "icon": "add_circle",
+            "display": "list",
+            "non-repeat": {
+              "meta_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label": "Meta Title"
+                }
+              },
+              "meta_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                  "label": "Meta Description"
+                }
+              },
+              "slug": {
+                "type": "Text",
+                "config": {
+                  "label": "slug"
+                }
+              },
+              "route": {
+                "type": "Text",
+                "config": {
+                  "label": "route"
+                }
+              },
+              "published": {
+                "type": "Select",
+                "config": {
+                  "options": ["Yes", "No"],
+                  "default_value": "Yes",
+                  "label": "Published"
+                }
+              },
+              "layout": {
+                "type": "Text",
+                "config": {
+                  "label": "layout"
+                }
+              },
+              "type": {
+                "type": "Text",
+                "config": {
+                  "label": "type"
+                }
+              },
+              "background_color": {
+                "type": "Color",
+                "config": {
+                  "label": "Background color"
+                }
+              }
+            },
+            "repeat": {}
+          }
+        }
+      }
+    }
+  }
+}

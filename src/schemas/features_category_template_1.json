@@ -1,0 +1,57 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "uid"
+      }
+    },
+    "category_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading3,heading4",
+        "label": "Category Title"
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": null,
+        "choices": {
+          "category_features": {
+            "type": "Slice",
+            "fieldset": "Category Features",
+            "description": "Category Features",
+            "icon": "apps",
+            "display": "grid",
+            "non-repeat": {},
+            "repeat": {
+              "feature_icon": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Feature Icon"
+                }
+              },
+              "feature_title": {
+                "type": "Text",
+                "config": {
+                  "label": "Feature Title"
+                }
+              },
+              "feature_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, strong, em, hyperlink",
+                  "label": "Feature Description"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

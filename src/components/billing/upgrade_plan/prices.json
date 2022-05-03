@@ -1,0 +1,36 @@
+{
+  "meetup": {
+    "monthly": {
+      "price": {
+        "EUR": 99,
+        "USD": 120,
+        "CAD": 150,
+        "AED": 400
+      },
+      "overage": {
+        "EUR": {
+          "people": 6,
+          "exhibitors": 100
+        },
+        "USD": {
+          "people": 7,
+          "exhibitors": 120
+        },
+        "CAD": {
+          "people": 9,
+          "exhibitors": 150
+        },
+        "AED": {
+          "people": 24,
+          "exhibitors": 400
+        }
+      },
+      "productPriceId": {
+        "EUR": "UHJvZHVjdFByaWNlXzE=",
+        "CAD": "UHJvZHVjdFByaWNlXzI=",
+        "USD": "UHJvZHVjdFByaWNlXzM=",
+        "AED": "UHJvZHVjdFByaWNlXzQ="
+      }
+    }
+  }
+}

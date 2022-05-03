@@ -1,0 +1,86 @@
+{
+  "base_plans": [
+    {
+      "name": "free",
+      "price": {
+        "monthly": {
+          "eur": 0,
+          "usd": 0,
+          "cad": 0,
+          "gbp": 0,
+          "aed": 0,
+          "sgd": 0
+        },
+        "annually": {
+          "eur": 0,
+          "usd": 0,
+          "cad": 0,
+          "gbp": 0,
+          "aed": 0,
+          "sgd": 0
+        }
+      }
+    },
+    {
+      "name": "event",
+      "price": {
+        "monthly": {
+          "eur": 490,
+          "usd": 590,
+          "cad": 735,
+          "gbp": 440,
+          "aed": 1960,
+          "sgd": 0
+        },
+        "annually": {
+          "eur": 490,
+          "usd": 590,
+          "cad": 735,
+          "gbp": 440,
+          "aed": 1960,
+          "sgd": 0
+        }
+      }
+    },
+    {
+      "name": "meetup",
+      "price": {
+        "monthly": {
+          "eur": 99,
+          "usd": 120,
+          "cad": 150,
+          "aed": 400,
+          "gbp": 90,
+          "sgd": 0
+        },
+        "annually": {
+          "eur": 99,
+          "usd": 120,
+          "cad": 150,
+          "aed": 400,
+          "gbp": 90,
+          "sgd": 0
+        }
+      }
+    },
+    {
+      "name": "community",
+      "price": {
+        "monthly": {
+          "eur": -1,
+          "usd": -1,
+          "cad": -1,
+          "aed": -1,
+          "sgd": -1
+        },
+        "annually": {
+          "eur": -1,
+          "usd": -1,
+          "cad": -1,
+          "aed": -1,
+          "sgd": -1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "Main": {
+    "next_step": {
+      "type": "Text",
+      "config": {
+        "label": "Next Step"
+      }
+    },
+    "doc_name": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label": "Doc Name"
+      }
+    },
+    "loading": {
+      "type": "Text",
+      "config": {
+        "label": "Loading"
+      }
+    },
+    "close": {
+      "type": "Text",
+      "config": {
+        "label": "Close"
+      }
+    },
+    "title": {
+      "type": "Text",
+      "config": {
+        "label": "Title"
+      }
+    },
+    "sub_title": {
+      "type": "Text",
+      "config": {
+        "label": "Sub Title"
+      }
+    },
+    "demo_path": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "demo_path_key": {
+            "type": "Text",
+            "config": {
+              "label": "Demo Path Key"
+            }
+          },
+          "demo_path_title": {
+            "type": "Text",
+            "config": {
+              "label": "Demo Path Title"
+            }
+          },
+          "demo_path_sub_title": {
+            "type": "Text",
+            "config": {
+              "label": "Demo Path Sub Title"
+            }
+          },
+          "demo_path_description": {
+            "type": "Text",
+            "config": {
+              "label": "Demo Path Description"
+            }
+          },
+          "demo_path_button_label": {
+            "type": "Text",
+            "config": {
+              "label": "Demo Path Button Label"
+            }
+          }
+        },
+        "label": "Demo Path"
+      }
+    },
+    "modal_one_one_title": {
+      "type": "Text",
+      "config": {
+        "label": "Modal One One Title"
+      }
+    },
+    "modal_recorded_demo_hubspot_id": {
+      "type": "Text",
+      "config": {
+        "label": "Modal Recorded Demo Hubspot Id"
+      }
+    },
+    "modal_recorded_demo_title": {
+      "type": "Text",
+      "config": {
+        "label": "Modal Recorded Demo Title"
+      }
+    },
+    "modal_weekly_demo_title": {
+      "type": "Text",
+      "config": {
+        "label": "Modal Weekly Demo Title"
+      }
+    },
+    "modal_weekly_demo_hubspot_id": {
+      "type": "Text",
+      "config": {
+        "label": "Modal Weekly Demo Hubspot Id"
+      }
+    },
+    "title_explore_your_own": {
+      "type": "Text",
+      "config": {
+        "label": "Title Explore Your Own"
+      }
+    },
+    "explore_your_own": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "picture": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Picture"
+            }
+          },
+          "explore_your_own_key": {
+            "type": "Text",
+            "config": {
+              "label": "Explore Your Own Key"
+            }
+          },
+          "title_explore_your_own1": {
+            "type": "Text",
+            "config": {
+              "label": "Title Explore Your Own"
+            }
+          },
+          "description_explore_your_own": {
+            "type": "Text",
+            "config": {
+              "label": "Description Explore Your Own"
+            }
+          },
+          "button_explore_your_own": {
+            "type": "Text",
+            "config": {
+              "label": "Button Explore Your Own"
+            }
+          }
+        },
+        "label": "Explore Your Own"
+      }
+    },
+    "marvel_modal_title": {
+      "type": "Text",
+      "config": {
+        "label": "Marvel Modal Title"
+      }
+    },
+    "marvel_modal_submit": {
+      "type": "Text",
+      "config": {
+        "label": "Marvel Modal Submit"
+      }
+    },
+    "modal_attendee_title": {
+      "type": "Text",
+      "config": {
+        "label": "Modal Attendee Title"
+      }
+    },
+    "modal_attendee_hubspot_id": {
+      "type": "Text",
+      "config": {
+        "label": "Modal Attendee Hubspot Id"
+      }
+    },
+    "title_customers": {
+      "type": "Text",
+      "config": {
+        "label": "Title Customers"
+      }
+    },
+    "customers_logo": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "customers": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Customers"
+            }
+          }
+        },
+        "label": "Customers Logo"
+      }
+    }
+  },
+  "Meta": {
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": {},
+        "choices": {
+          "meta": {
+            "type": "Slice",
+            "fieldset": "Meta",
+            "description": "All meta needed for configuration",
+            "icon": "add_circle",
+            "display": "list",
+            "non-repeat": {
+              "meta_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label": "Meta Title"
+                }
+              },
+              "meta_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                  "label": "Meta Description"
+                }
+              },
+              "slug": {
+                "type": "Text",
+                "config": {
+                  "label": "slug",
+                  "placeholder": "In french, start with \"/\""
+                }
+              },
+              "route": {
+                "type": "Text",
+                "config": {
+                  "label": "route",
+                  "placeholder": "HAS TO BE THE SAME BETWEEN EACH SAME PAGES"
+                }
+              },
+              "published": {
+                "type": "Select",
+                "config": {
+                  "options": ["Yes", "No"],
+                  "default_value": "Yes",
+                  "label": "Published"
+                }
+              },
+              "layout": {
+                "type": "Text",
+                "config": {
+                  "label": "layout"
+                }
+              },
+              "type": {
+                "type": "Text",
+                "config": {
+                  "label": "type"
+                }
+              },
+              "background_color": {
+                "type": "Color",
+                "config": {
+                  "label": "Background color"
+                }
+              }
+            },
+            "repeat": {}
+          }
+        }
+      }
+    }
+  }
+}

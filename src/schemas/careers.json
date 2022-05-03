@@ -1,0 +1,215 @@
+{
+  "Main": {
+    "hero_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label": "Hero Title"
+      }
+    },
+    "introduction_text": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+        "label": "Introduction text"
+      }
+    },
+    "introduction_picture": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Introduction picture"
+      }
+    },
+    "position_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label": "Position Title"
+      }
+    },
+    "position_sub_title": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+        "label": "Position Sub Title"
+      }
+    },
+    "life_at_swapcard1": {
+      "type": "Text",
+      "config": {
+        "label": "Life At Swapcard"
+      }
+    },
+    "find_us": {
+      "type": "Text",
+      "config": {
+        "label": "Find us"
+      }
+    },
+    "life_at_swapcard": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "title": {
+            "type": "StructuredText",
+            "config": {
+              "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+              "label": "Title"
+            }
+          },
+          "content": {
+            "type": "StructuredText",
+            "config": {
+              "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+              "label": "Content"
+            }
+          }
+        },
+        "label": "Life At Swapcard"
+      }
+    },
+    "title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label": "title"
+      }
+    },
+    "button": {
+      "type": "Text",
+      "config": {
+        "label": "button"
+      }
+    },
+    "link": {
+      "type": "Text",
+      "config": {
+        "label": "link"
+      }
+    },
+    "bodyJobs": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "choices": {
+          "jobs_position": {
+            "type": "Slice",
+            "fieldset": "Categories",
+            "description": "Job category + Jobs Links",
+            "icon": "group_add",
+            "display": "list",
+            "non-repeat": {
+              "category": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                  "label": "Category"
+                }
+              },
+              "category_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                  "label": "Category Description"
+                }
+              },
+              "meet": {
+                "type": "Text",
+                "config": {
+                  "label": "Meet"
+                }
+              },
+              "category_picture": {
+                "type": "Image",
+                "config": {
+                  "constraint": {
+                    "width": 500,
+                    "height": 600
+                  },
+                  "thumbnails": [],
+                  "label": "Category Picture"
+                }
+              }
+            },
+            "repeat": {
+              "job_link": {
+                "type": "Text",
+                "config": {
+                  "label": "Job Link"
+                }
+              },
+              "job_anchor_link": {
+                "type": "Text",
+                "config": {
+                  "label": "Job Anchor Link"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Meta": {
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "choices": {
+          "meta": {
+            "type": "Slice",
+            "fieldset": "Meta",
+            "description": "All meta needed for configuration",
+            "icon": "add_circle",
+            "display": "list",
+            "non-repeat": {
+              "meta_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label": "Meta Title"
+                }
+              },
+              "meta_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                  "label": "Meta Description"
+                }
+              },
+              "slug": {
+                "type": "Text",
+                "config": {
+                  "label": "slug"
+                }
+              },
+              "route": {
+                "type": "Text",
+                "config": {
+                  "label": "route"
+                }
+              },
+              "show_navigation": {
+                "type": "Select",
+                "config": {
+                  "options": ["Yes", "No"],
+                  "default_value": "Yes",
+                  "label": "Show navigation"
+                }
+              },
+              "background_color": {
+                "type": "Color",
+                "config": {
+                  "label": "Background color"
+                }
+              }
+            },
+            "repeat": {}
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,298 @@
+{
+  "Main": {
+    "doc_id": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+        "label": "Doc ID"
+      }
+    },
+    "pricing_table_heading": {
+      "type": "Text",
+      "config": {
+        "label": "Pricing Table Heading"
+      }
+    },
+    "bill_period_text": {
+      "type": "Text",
+      "config": {
+        "label": "Bill Period Text"
+      }
+    },
+    "hubspot_form_heading": {
+      "type": "Text",
+      "config": {
+        "label": "Hubspot Form Heading"
+      }
+    },
+    "hubspot_form_id": {
+      "type": "Text",
+      "config": {
+        "label": "Hubspot Form Id"
+      }
+    },
+    "leading_companies_heading": {
+      "type": "Text",
+      "config": {
+        "label": "Leading Companies Heading"
+      }
+    },
+    "start_conversion_heading": {
+      "type": "Text",
+      "config": {
+        "label": "Start Conversion Heading"
+      }
+    },
+    "button_text": {
+      "type": "Text",
+      "config": {
+        "label": "Button Text"
+      }
+    },
+    "button_link": {
+      "type": "Text",
+      "config": {
+        "label": "Button Link"
+      }
+    },
+    "conversion_note": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,strong,em,hyperlink",
+        "label": "Conversion Note"
+      }
+    },
+    "bodyMain": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": null,
+        "choices": {
+          "pricing_saas_v2": {
+            "type": "Slice",
+            "fieldset": "Pricing SAAS V2",
+            "description": "Pricing SAAS V2",
+            "icon": "border_all",
+            "display": "list",
+            "non-repeat": {
+              "plan_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading3,heading4",
+                  "label": "Plan Title"
+                }
+              },
+              "plan_description": {
+                "type": "Text",
+                "config": {
+                  "label": "Plan Description"
+                }
+              },
+              "plan_details": {
+                "type": "Text",
+                "config": {
+                  "label": "Plan Details"
+                }
+              },
+              "plan_type": {
+                "type": "Select",
+                "config": {
+                  "options": ["Regular", "Custom", "Free"],
+                  "default_value": "Regular",
+                  "label": "Plan Type"
+                }
+              },
+              "color": {
+                "type": "Text",
+                "config": {
+                  "label": "Color"
+                }
+              },
+              "price_starting_at_text": {
+                "type": "Text",
+                "config": {
+                  "label": "Price Starting At Text"
+                }
+              },
+              "price_note": {
+                "type": "Text",
+                "config": {
+                  "label": "Price Note"
+                }
+              },
+              "button_text": {
+                "type": "Text",
+                "config": {
+                  "label": "Button Text"
+                }
+              },
+              "button_link1": {
+                "type": "Text",
+                "config": {
+                  "label": "Button Link"
+                }
+              },
+              "price_in_usd": {
+                "type": "Text",
+                "config": {
+                  "label": "Price In usd"
+                }
+              },
+              "price_in_eur": {
+                "type": "Text",
+                "config": {
+                  "label": "Price In Eur"
+                }
+              },
+              "price_in_aed": {
+                "type": "Text",
+                "config": {
+                  "label": "Price In aed"
+                }
+              },
+              "price_in_gbp": {
+                "type": "Text",
+                "config": {
+                  "label": "Price in gbp"
+                }
+              },
+              "price_in_cad": {
+                "type": "Text",
+                "config": {
+                  "label": "Price in cad"
+                }
+              },
+              "price_in_sgd": {
+                "type": "Text",
+                "config": {
+                  "label": "Price in sgd"
+                }
+              },
+              "price_in_aud": {
+                "type": "Text",
+                "config": {
+                  "label": "Price in aud"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "brand_logos": {
+            "type": "Slice",
+            "fieldset": "Brand Logos",
+            "description": "Brand Logos",
+            "icon": "apps",
+            "display": "grid",
+            "non-repeat": {},
+            "repeat": {
+              "logo": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Logo"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Meta": {
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "choices": {
+          "meta": {
+            "type": "Slice",
+            "fieldset": "Meta",
+            "description": "All meta needed for configuration",
+            "icon": "add_circle",
+            "display": "list",
+            "non-repeat": {
+              "meta_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                  "label": "Meta Title"
+                }
+              },
+              "meta_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Meta Description"
+                }
+              },
+              "slug": {
+                "type": "Text",
+                "config": {
+                  "label": "slug",
+                  "placeholder": "In french, start with \"/\""
+                }
+              },
+              "route": {
+                "type": "Text",
+                "config": {
+                  "label": "route",
+                  "placeholder": "HAS TO BE THE SAME BETWEEN EACH SAME PAGES"
+                }
+              },
+              "published": {
+                "type": "Select",
+                "config": {
+                  "options": ["Yes", "No"],
+                  "default_value": "Yes",
+                  "label": "Published"
+                }
+              },
+              "is_attendee_page": {
+                "type": "Select",
+                "config": {
+                  "options": ["No", "Yesy"],
+                  "default_value": "No",
+                  "label": "Is Attendee Page"
+                }
+              },
+              "layout": {
+                "type": "Text",
+                "config": {
+                  "label": "layout"
+                }
+              },
+              "type": {
+                "type": "Text",
+                "config": {
+                  "label": "type"
+                }
+              },
+              "background_color": {
+                "type": "Color",
+                "config": {
+                  "label": "Background color"
+                }
+              },
+              "menu_color": {
+                "type": "Color",
+                "config": {
+                  "label": "Menu Color"
+                }
+              },
+              "meta_card": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Meta Card"
+                }
+              }
+            },
+            "repeat": {}
+          }
+        }
+      }
+    }
+  }
+}

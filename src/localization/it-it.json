@@ -1,0 +1,111 @@
+{
+  "optionsExhibitors": [
+    { "value": "Yes", "label": "Oui" },
+    { "value": "No", "label": "Non" }
+  ],
+  "numberOfAttendeesOption": [
+    { "value": "0 - 500", "label": "0 - 500" },
+    { "value": "500 - 1.500", "label": "500 - 1.500" },
+    { "value": "1.500 - 5.000", "label": "1.500 - 5.000" },
+    { "value": "5.000 - 25.000", "label": "5.000 - 25.000" },
+    { "value": "25.000+", "label": "25.000+" }
+  ],
+  "numberOfSponsorsOption": [
+    { "value": "0 - 25", "label": "0 - 25" },
+    { "value": "25 - 100", "label": "25 - 100" },
+    { "value": "100 - 250", "label": "100 - 250" },
+    { "value": "250+", "label": "+250" }
+  ],
+  "typeOfEvent": [
+    { "label": "Salon", "value": "Trade show" },
+    { "label": "Conférence", "value": "Conference" },
+    { "label": "Congrès", "value": "Congress" },
+    { "label": "Recrutement", "value": "HR" },
+    { "label": "Corporate", "value": "Internal event" },
+    { "label": "Convention d'affaires", "value": "Hosted buyers" },
+    { "label": "Autre", "value": "IDK" }
+  ],
+  "getInTouch": {
+    "Request_demo": {
+      "tracking_category": "Get a demo",
+      "button": "Richiedi una demo",
+      "to": "/it/contatti/"
+    },
+    "Support_link_attendees": {
+      "button": "Accéder au Centre de ressources",
+      "to": "/fr/faq/participants/"
+    },
+    "Support_link_exhibitors": {
+      "button": "Accéder au Centre de ressources",
+      "to": "/fr/faq/exposants/"
+    },
+    "Contact_us": {
+      "tracking_category": "Contact us",
+      "button": "Contattateci",
+      "to": "/it/contatti/"
+    },
+    "Webinars": {
+      "tracking_category": "Webinar",
+      "button": "Assister au webinaire",
+      "to": "https://calendly.com/luisaswapcard/meeting"
+    },
+    "getStarted": {
+      "tracking_category": "Get started",
+      "button": "INIZIA",
+      "to": "https://studio.swapcard.com/join",
+      "or": "oppure"
+    }
+  },
+  "pricing": {
+    "getStarted": {
+      "tracking_category": "Get started",
+      "button": "INIZIA",
+      "to": "https://studio.swapcard.com/join"
+    },
+    "contact": {
+      "tracking_category": "Contact us",
+      "button": "Contattateci",
+      "to": "/it/contatti/"
+    },
+    "branded_app": {
+      "tracking_category": "Branded app",
+      "button": "Application marque blanche",
+      "to": "/it/contatti/"
+    }
+  },
+  "hero": {
+    "Request_demo": {
+      "tracking_category": "Get a demo",
+      "button": "Richiedi una demo",
+      "to": "/it/contatti/"
+    },
+    "StartFree": {
+      "tracking_category": "Get started",
+      "button": "INIZIA",
+      "to": "https://studio.swapcard.com/join"
+    },
+    "Contact": {
+      "tracking_category": "Contact us",
+      "button": "Contattateci",
+      "to": "/it/contatti/"
+    },
+    "Video": {
+      "button": "Comprendre en vidéo"
+    },
+    "email_form": {
+      "placeholder": "Entrez votre email pour commencer",
+      "submit": "Commencer"
+    }
+  },
+  "signup_url": {
+    "url": "https://studio.swapcard.com/join"
+  },
+  "download_app": {
+    "phone": "Numéro de téléphone portable",
+    "button": "Envoyer le SMS",
+    "button_sent": "SMS envoyé !"
+  },
+  "menu": {
+    "new": "Nouveau"
+  }
+}

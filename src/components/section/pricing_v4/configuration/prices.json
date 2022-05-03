@@ -1,0 +1,68 @@
+{
+  "attendees": {
+    "eur": 6,
+    "usd": 7,
+    "cad": 9,
+    "aed": 24
+  },
+  "web_training": {
+    "eur": 490,
+    "cad": 735,
+    "aed": 1960,
+    "usd": 490
+  },
+  "branded_app": {
+    "eur": 1490,
+    "usd": 1790,
+    "cad": 2240,
+    "aed": 5960
+  },
+  "branded_app_web_only": {
+    "eur": 990,
+    "usd": 1190,
+    "cad": 1490,
+    "aed": 3990
+  },
+  "floor_plan": {
+    "eur": 990,
+    "usd": 1190,
+    "cad": 1490,
+    "aed": 3990
+  },
+  "floor_plan_per_exhibitors": {
+    "eur": 2,
+    "usd": 2,
+    "cad": 3,
+    "aed": 8
+  },
+  "dedicated_manager_per_day": {
+    "eur": 990,
+    "usd": 1190,
+    "cad": 1490,
+    "aed": 3990
+  },
+  "onsite_support_per_day": {
+    "eur": 1490,
+    "usd": 1790,
+    "cad": 2240,
+    "aed": 5990
+  },
+  "exhibitor_package_with_scan": {
+    "eur": 190,
+    "usd": 230,
+    "cad": 201,
+    "aed": 760
+  },
+  "exhibitor_package_without_scan": {
+    "eur": 100,
+    "usd": 120,
+    "cad": 150,
+    "aed": 400
+  },
+  "lead_capture_per_exhibitor": {
+    "eur": 90,
+    "usd": 110,
+    "cad": 135,
+    "aed": 360
+  }
+}

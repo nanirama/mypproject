@@ -1,0 +1,64 @@
+{
+  "base_plans": [
+    {
+      "name": "free",
+      "price": {
+        "monthly": {
+          "eur": 0,
+          "usd": 0,
+          "cad": 0,
+          "gbp": 0,
+          "aed": 0,
+          "sgd": 0
+        }
+      }
+    },
+    {
+      "name": "meetup",
+      "price": {
+        "monthly": {
+          "usd": 588,
+          "eur": 490,
+          "aed": 1960,
+          "gbp": 441,
+          "cad": 735,
+          "sgd": 784,
+          "aud": 784
+        }
+      }
+    },
+    {
+      "name": "event",
+      "price": {
+        "monthly": {
+          "usd": 1788,
+          "eur": 1490,
+          "aed": 5960,
+          "gbp": 1341,
+          "cad": 2235,
+          "sgd": 2384,
+          "aud": 2384
+        }
+      }
+    },
+    {
+      "name": "community",
+      "price": {
+        "monthly": {
+          "eur": -1,
+          "usd": -1,
+          "cad": -1,
+          "aed": -1,
+          "sgd": -1
+        },
+        "annually": {
+          "eur": -1,
+          "usd": -1,
+          "cad": -1,
+          "aed": -1,
+          "sgd": -1
+        }
+      }
+    }
+  ]
+}

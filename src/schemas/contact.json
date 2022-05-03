@@ -1,0 +1,174 @@
+{
+  "Main": {
+    "bodyMain": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "choices": {
+          "swapcard_offices": {
+            "type": "Slice",
+            "fieldset": "Swapcard Offices",
+            "description": "Swapcard Offices Across the World !",
+            "icon": "local_post_office",
+            "display": "list",
+            "non-repeat": {
+              "where": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label": "Where"
+                }
+              },
+              "office_address": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label": "Office address"
+                }
+              },
+              "office_phone": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label": "Office Phone"
+                }
+              },
+              "office_email": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label": "Office Email"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "hero": {
+            "type": "Slice",
+            "fieldset": "Hero",
+            "description": "Hero Section",
+            "icon": "favorite",
+            "display": "list",
+            "non-repeat": {
+              "hero_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label": "Hero Title"
+                }
+              },
+              "hero_sub_title": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                  "label": "Hero Sub Title"
+                }
+              },
+              "cta_type_1": {
+                "type": "Select",
+                "config": {
+                  "options": ["Demo request", "Start now form", "Go myevent"],
+                  "default_value": "Demo request",
+                  "label": "CTA Type 1"
+                }
+              },
+              "layouts": {
+                "type": "Select",
+                "config": {
+                  "options": ["Layout 1", "Layout 2"],
+                  "default_value": "Layout 1",
+                  "label": "Layouts",
+                  "placeholder": "Define space for texts"
+                }
+              },
+              "structure_layouts": {
+                "type": "Select",
+                "config": {
+                  "options": ["default", "lg-img", "tiny-img", "analytics", "homepage"],
+                  "default_value": "default",
+                  "label": "Structure layouts"
+                }
+              },
+              "hero_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Hero Image"
+                }
+              }
+            },
+            "repeat": {}
+          }
+        }
+      }
+    }
+  },
+  "Meta": {
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "choices": {
+          "meta": {
+            "type": "Slice",
+            "fieldset": "Meta",
+            "description": "All meta needed for configuration",
+            "icon": "golf_course",
+            "display": "list",
+            "non-repeat": {
+              "meta_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label": "Meta Title"
+                }
+              },
+              "meta_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                  "label": "Meta Description"
+                }
+              },
+              "slug": {
+                "type": "Text",
+                "config": {
+                  "label": "slug"
+                }
+              },
+              "route": {
+                "type": "Text",
+                "config": {
+                  "label": "route"
+                }
+              },
+              "layout": {
+                "type": "Text",
+                "config": {
+                  "label": "layout"
+                }
+              }
+            },
+            "repeat": {}
+          }
+        }
+      }
+    }
+  },
+  "Form": {
+    "success_message": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label": "success_message"
+      }
+    },
+    "hubspot_id": {
+      "type": "Text",
+      "config": {
+        "label": "Hubspot id"
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "development": {
+    "attendeesCredits": {
+      "eur": "price_HMtxXeGZMwF4Te",
+      "aed": "price_HMtxt8b8r5rAx8",
+      "usd": "price_HMtxNFh7SgM845",
+      "cad": "price_HMtxlA6kkNcjwh"
+    },
+    "tva": "price_1GqfCYFlHfOL7e43jWL2WEPx",
+    "webTraining": {
+      "eur": "price_HMtzJaUxx9jw6K",
+      "aed": "price_HMzoqPvaS1CZDF",
+      "usd": "price_HMu2jsOvleIZni",
+      "cad": "price_HMzoG41k4QJq9d"
+    },
+    "brandedApp": {
+      "eur": "price_1H7I8gFlHfOL7e43gy9aHn4s",
+      "aed": "price_1H6yeoFlHfOL7e430ISoFSpD",
+      "usd": "price_1H6ybaFlHfOL7e43JqMRFcn4",
+      "cad": "price_1H6yeYFlHfOL7e43RnUidJqo"
+    },
+    "cms": {
+      "eur": "price_1H7HsqFlHfOL7e43SKbxoL40",
+      "aed": "price_1H7GwMFlHfOL7e43h0ERfUBz",
+      "usd": "price_1H7GkNFlHfOL7e43qr49yLro",
+      "cad": "price_1H7Gw6FlHfOL7e43uqHGq8yG"
+    },
+    "meetings": {
+      "eur": "price_1H7Hs8FlHfOL7e43EGxl0QTd",
+      "aed": "price_1H7GxAFlHfOL7e43xErzSl8H",
+      "usd": "price_1H7GjTFlHfOL7e43P9q94QZl",
+      "cad": "price_1H7GxSFlHfOL7e43eLZ3Bbdo"
+    },
+    "leadCapture": {
+      "eur": "price_1H7HsWFlHfOL7e431pF76SWN",
+      "aed": "price_1H7GwvFlHfOL7e43TC36fFy8",
+      "usd": "price_1H7GjtFlHfOL7e43XLlAGUla",
+      "cad": "price_1H7GwhFlHfOL7e43a9UQdt06"
+    },
+    "globalExhibitorPackage": {
+      "eur": "price_1H7HrsFlHfOL7e43xFniwDA5",
+      "aed": "price_1H7GyNFlHfOL7e43YUYajFVE",
+      "usd": "price_1H7Gj2FlHfOL7e43uQDEucKe",
+      "cad": "price_1H7Gy9FlHfOL7e43BKmGkR6a"
+    },
+    "onSiteSupport": {
+      "eur": "price_1H7HqzFlHfOL7e43h3OQ5mKB",
+      "aed": "price_1H7GykFlHfOL7e43ud9qFuZl",
+      "usd": "price_1H7Gi1FlHfOL7e430PM0fPH5",
+      "cad": "price_1H7Gz0FlHfOL7e43vNkHPFsT"
+    },
+    "dedicatedSupport": {
+      "eur": "price_1H7HqhFlHfOL7e43UUnphfZC",
+      "aed": "price_1H7H0TFlHfOL7e43jlon9ouG",
+      "usd": "price_1H7GhUFlHfOL7e43G8KXyjwD",
+      "cad": "price_1H7H0BFlHfOL7e43ww4BQb2m"
+    }
+  },
+  "production": {
+    "attendeesCredits": {
+      "eur": "price_1Gq2F1FlHfOL7e43k7ZbT2ch",
+      "aed": "price_1Gq2F1FlHfOL7e43PqRxsG9r",
+      "usd": "price_1Gq2F1FlHfOL7e43fdP5cl3R",
+      "cad": "price_1Gq2F1FlHfOL7e43webJYvlk"
+    },
+    "tva": "price_1GqfjYFlHfOL7e43HQHpSr47",
+    "webTraining": {
+      "eur": "price_HN01kz2Miogt8c",
+      "aed": "price_HN019Ummwte2Zu",
+      "usd": "price_HN01rAfVmPBRGP",
+      "cad": "price_HN01PhUM7wr0yp"
+    }
+  }
+}

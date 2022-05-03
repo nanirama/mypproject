@@ -1,0 +1,4 @@
+#!/bin/bash
+set -e
+npm run build
+aws s3 --profile swapcard sync public s3://swapcard-showcase-production --delete --cache-control public,max-age=31536000,immutable --acl public-read --exclude '*.html' --exclude '*/page-data.json' && aws s3 --profile swapcard sync public s3://swapcard-showcase-production --delete --cache-control max-age=0,no-cache,no-store,must-revalidate --acl public-read --content-type text/html --exclude '*.json' --include '*.html' && aws s3 --profile swapcard sync public s3://swapcard-showcase-production --delete --cache-control max-age=0,no-cache,no-store,must-revalidate --acl public-read --content-type application/json --include '*.json'

@@ -1,0 +1,136 @@
+{
+  "Main": {
+    "customer_name": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label": "Customer Name"
+      }
+    },
+    "sentence_code": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label": "Sentence Code"
+      }
+    },
+    "code": {
+      "type": "Text",
+      "config": {
+        "label": "Code"
+      }
+    },
+    "web_app_link": {
+      "type": "Text",
+      "config": {
+        "label": "Web App Link"
+      }
+    },
+    "web_app_link_label": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+        "label": "Web App Link Label"
+      }
+    },
+    "app_store_link": {
+      "type": "Link",
+      "config": {
+        "label": "App Store Link",
+        "placeholder": "Link"
+      }
+    },
+    "google_store_link": {
+      "type": "Link",
+      "config": {
+        "label": "Google Store Link",
+        "placeholder": "Link"
+      }
+    },
+    "background_color": {
+      "type": "Color",
+      "config": {
+        "label": "Background color"
+      }
+    },
+    "app_icon": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": 120,
+          "height": 120
+        },
+        "thumbnails": [],
+        "label": "App Icon"
+      }
+    },
+    "screenshot_iphone": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Screenshot iPhone"
+      }
+    }
+  },
+  "Meta": {
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "choices": {
+          "meta": {
+            "type": "Slice",
+            "fieldset": "Meta",
+            "description": "All meta needed for configuration",
+            "icon": "golf_course",
+            "display": "list",
+            "non-repeat": {
+              "meta_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label": "Meta Title"
+                }
+              },
+              "meta_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                  "label": "Meta Description"
+                }
+              },
+              "slug": {
+                "type": "Text",
+                "config": {
+                  "label": "slug"
+                }
+              },
+              "route": {
+                "type": "Text",
+                "config": {
+                  "label": "route"
+                }
+              },
+              "published": {
+                "type": "Select",
+                "config": {
+                  "options": ["Yes", "No"],
+                  "default_value": "Yes",
+                  "label": "Published"
+                }
+              },
+              "layout": {
+                "type": "Text",
+                "config": {
+                  "label": "layout"
+                }
+              }
+            },
+            "repeat": {}
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "Main": {
+    "doc_id": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+        "label": "Doc ID"
+      }
+    },
+    "webinar_name": {
+      "type": "Text",
+      "config": {
+        "label": "Webinar Name"
+      }
+    },
+    "webinar_description": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, heading1, heading2, heading3, heading4, heading5, strong, em, list-item",
+        "label": "Webinar Description"
+      }
+    },
+    "hubspot_form_id": {
+      "type": "Text",
+      "config": {
+        "label": "Hubspot Form Id"
+      }
+    },
+    "bodyMain": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": null,
+        "choices": {
+          "brand_logos": {
+            "type": "Slice",
+            "fieldset": "Brand Logos",
+            "description": "Brand Logos",
+            "icon": "apps",
+            "display": "grid",
+            "non-repeat": {},
+            "repeat": {
+              "logo": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Logo"
+                }
+              }
+            }
+          },
+          "speakers_list": {
+            "type": "Slice",
+            "fieldset": "Speakers List",
+            "description": "Speakers List",
+            "icon": "apps",
+            "display": "grid",
+            "non-repeat": {},
+            "repeat": {
+              "speaker_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Speaker Image"
+                }
+              },
+              "speaker_name": {
+                "type": "Text",
+                "config": {
+                  "label": "Speaker Name"
+                }
+              },
+              "speaker_designation": {
+                "type": "Text",
+                "config": {
+                  "label": "Speaker Designation"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Meta": {
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "choices": {
+          "meta": {
+            "type": "Slice",
+            "fieldset": "Meta",
+            "description": "All meta needed for configuration",
+            "icon": "add_circle",
+            "display": "list",
+            "non-repeat": {
+              "meta_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                  "label": "Meta Title"
+                }
+              },
+              "meta_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Meta Description"
+                }
+              },
+              "slug": {
+                "type": "Text",
+                "config": {
+                  "label": "slug",
+                  "placeholder": "In french, start with \"/\""
+                }
+              },
+              "route": {
+                "type": "Text",
+                "config": {
+                  "label": "route",
+                  "placeholder": "HAS TO BE THE SAME BETWEEN EACH SAME PAGES"
+                }
+              },
+              "published": {
+                "type": "Select",
+                "config": {
+                  "options": ["Yes", "No"],
+                  "default_value": "Yes",
+                  "label": "Published"
+                }
+              },
+              "is_attendee_page": {
+                "type": "Select",
+                "config": {
+                  "options": ["No", "Yesy"],
+                  "default_value": "No",
+                  "label": "Is Attendee Page"
+                }
+              },
+              "layout": {
+                "type": "Text",
+                "config": {
+                  "label": "layout"
+                }
+              },
+              "type": {
+                "type": "Text",
+                "config": {
+                  "label": "type"
+                }
+              },
+              "background_color": {
+                "type": "Color",
+                "config": {
+                  "label": "Background color"
+                }
+              },
+              "menu_color": {
+                "type": "Color",
+                "config": {
+                  "label": "Menu Color"
+                }
+              },
+              "meta_card": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Meta Card"
+                }
+              }
+            },
+            "repeat": {}
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+import React, { useEffect, useState } from "react";
+import { Table, Td, Thead, Tbody, TableWrapper, TrHead, Th, Tr, Inner } from "../../table";
+
+const Consumption = () => {
+  return (
+    <TableWrapper>
+      <Table>
+        <Thead>
+          <TrHead>
+            <Th>Billing Period</Th>
+            <Th>People</Th>
+            <Th>Exhibitors</Th>
+            <Th>Overage</Th>
+          </TrHead>
+        </Thead>
+        <Tbody>
+          <Tr>
+            <Td>
+              <Inner>120</Inner>
+            </Td>
+            <Td>
+              <Inner>120</Inner>
+            </Td>
+            <Td>
+              <Inner>120</Inner>
+            </Td>
+            <Td>
+              <Inner>120</Inner>
+            </Td>
+          </Tr>
+          <Tr>
+            <Td>
+              <Inner>120</Inner>
+            </Td>
+            <Td>
+              <Inner>120</Inner>
+            </Td>
+            <Td>
+              <Inner>120</Inner>
+            </Td>
+            <Td>
+              <Inner>120</Inner>
+            </Td>
+          </Tr>
+          <Tr>
+            <Td>
+              <Inner>120</Inner>
+            </Td>
+            <Td>
+              <Inner>120</Inner>
+            </Td>
+            <Td>
+              <Inner>120</Inner>
+            </Td>
+            <Td>
+              <Inner>120</Inner>
+            </Td>
+          </Tr>
+          <Tr>
+            <Td>
+              <Inner>120</Inner>
+            </Td>
+            <Td>
+              <Inner>120</Inner>
+            </Td>
+            <Td>
+              <Inner>120</Inner>
+            </Td>
+            <Td>
+              <Inner>120</Inner>
+            </Td>
+          </Tr>
+          <Tr>
+            <Td>
+              <Inner>120</Inner>
+            </Td>
+            <Td>
+              <Inner>120</Inner>
+            </Td>
+            <Td>
+              <Inner>120</Inner>
+            </Td>
+            <Td>
+              <Inner>120</Inner>
+            </Td>
+          </Tr>
+        </Tbody>
+      </Table>
+    </TableWrapper>
+  );
+};
+
+export default Consumption;

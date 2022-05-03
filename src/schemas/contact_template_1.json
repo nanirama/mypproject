@@ -1,0 +1,2945 @@
+{
+  "Main": {
+    "doc_id": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+        "label": "Doc ID"
+      }
+    },
+    "bodyMain": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": {},
+        "choices": {
+          "support_form": {
+            "type": "Slice",
+            "fieldset": "Support form",
+            "description": "Form for attendees support",
+            "icon": "accessibility",
+            "display": "list",
+            "non-repeat": {
+              "key_1": {
+                "type": "Text",
+                "config": {
+                  "label": "key_1"
+                }
+              },
+              "key_2": {
+                "type": "Text",
+                "config": {
+                  "label": "key_2"
+                }
+              },
+              "key_3": {
+                "type": "Text",
+                "config": {
+                  "label": "key_3"
+                }
+              },
+              "please_select": {
+                "type": "Text",
+                "config": {
+                  "label": "please_select"
+                }
+              },
+              "event_date_placeholder": {
+                "type": "Text",
+                "config": {
+                  "label": "event_date_placeholder"
+                }
+              },
+              "event_date": {
+                "type": "Text",
+                "config": {
+                  "label": "event_date"
+                }
+              },
+              "entity_question": {
+                "type": "Text",
+                "config": {
+                  "label": "entity_question"
+                }
+              },
+              "exhibitor": {
+                "type": "Text",
+                "config": {
+                  "label": "exhibitor"
+                }
+              },
+              "attendee": {
+                "type": "Text",
+                "config": {
+                  "label": "attendee"
+                }
+              },
+              "form_title": {
+                "type": "Text",
+                "config": {
+                  "label": "Form title"
+                }
+              },
+              "form_sub_title": {
+                "type": "Text",
+                "config": {
+                  "label": "Form Sub Title"
+                }
+              },
+              "form_success": {
+                "type": "Text",
+                "config": {
+                  "label": "Form Success"
+                }
+              },
+              "form_input_name": {
+                "type": "Text",
+                "config": {
+                  "label": "Form Input Name"
+                }
+              },
+              "form_input_email": {
+                "type": "Text",
+                "config": {
+                  "label": "Form Input Email"
+                }
+              },
+              "form_input_event_name": {
+                "type": "Text",
+                "config": {
+                  "label": "Form Input Event Name"
+                }
+              },
+              "form_question_from_faq": {
+                "type": "Text",
+                "config": {
+                  "label": "Form Question from FAQ"
+                }
+              },
+              "form_question_from_faq_placeholder": {
+                "type": "Text",
+                "config": {
+                  "label": "Form Question From FAQ placeholder"
+                }
+              },
+              "form_didn_t_find_your_question": {
+                "type": "Text",
+                "config": {
+                  "label": "Form Didn't find your question?"
+                }
+              },
+              "form_message": {
+                "type": "Text",
+                "config": {
+                  "label": "Form Message"
+                }
+              },
+              "form_submit": {
+                "type": "Text",
+                "config": {
+                  "label": "Form Submit"
+                }
+              }
+            },
+            "repeat": {
+              "faq_question": {
+                "type": "Text",
+                "config": {
+                  "label": "FAQ Question"
+                }
+              },
+              "faq_answer": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "allowTargetBlank": true,
+                  "label": "FAQ Answer"
+                }
+              }
+            }
+          },
+          "support_segmentation": {
+            "type": "Slice",
+            "fieldset": "Support splitting",
+            "description": "Let user select the type of support",
+            "icon": "face",
+            "display": "list",
+            "non-repeat": {
+              "title": {
+                "type": "Text",
+                "config": {
+                  "label": "Title"
+                }
+              },
+              "sub_title": {
+                "type": "Text",
+                "config": {
+                  "label": "Sub Title"
+                }
+              },
+              "where_to_find_us": {
+                "type": "Text",
+                "config": {
+                  "label": "where to find us"
+                }
+              },
+              "fr_address": {
+                "type": "Text",
+                "config": {
+                  "label": "fr_address"
+                }
+              },
+              "fr_phone": {
+                "type": "Text",
+                "config": {
+                  "label": "fr_phone"
+                }
+              },
+              "fr_email": {
+                "type": "Text",
+                "config": {
+                  "label": "fr_email"
+                }
+              },
+              "dubai_address": {
+                "type": "Text",
+                "config": {
+                  "label": "dubai_address"
+                }
+              },
+              "dubai_phone": {
+                "type": "Text",
+                "config": {
+                  "label": "dubai_phone"
+                }
+              },
+              "dubai_email": {
+                "type": "Text",
+                "config": {
+                  "label": "dubai_email"
+                }
+              },
+              "canada_address": {
+                "type": "Text",
+                "config": {
+                  "label": "canada_address"
+                }
+              },
+              "canada_email": {
+                "type": "Text",
+                "config": {
+                  "label": "canada_email"
+                }
+              },
+              "canada_phone": {
+                "type": "Text",
+                "config": {
+                  "label": "canada_phone"
+                }
+              },
+              "usa_address": {
+                "type": "Text",
+                "config": {
+                  "label": "usa_address"
+                }
+              },
+              "usa_phone": {
+                "type": "Text",
+                "config": {
+                  "label": "usa_phone"
+                }
+              },
+              "usa_email": {
+                "type": "Text",
+                "config": {
+                  "label": "usa_email"
+                }
+              },
+              "canada": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Canada"
+                }
+              },
+              "londres": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Londres"
+                }
+              },
+              "dubai": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Dubai"
+                }
+              },
+              "france": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "France"
+                }
+              },
+              "usa": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "USA"
+                }
+              }
+            },
+            "repeat": {
+              "picture": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [
+                    {
+                      "name": "normal",
+                      "width": 300,
+                      "height": 300
+                    }
+                  ],
+                  "label": "picture"
+                }
+              },
+              "icon": {
+                "type": "Text",
+                "config": {
+                  "label": "icon"
+                }
+              },
+              "name": {
+                "type": "Text",
+                "config": {
+                  "label": "name"
+                }
+              },
+              "description": {
+                "type": "Text",
+                "config": {
+                  "label": "description"
+                }
+              },
+              "link": {
+                "type": "Text",
+                "config": {
+                  "label": "link"
+                }
+              },
+              "link_v2": {
+                "type": "Link",
+                "config": {
+                  "label": "link_v2",
+                  "select": null
+                }
+              }
+            }
+          },
+          "space": {
+            "type": "Slice",
+            "fieldset": "Space",
+            "description": "Empty space between blocks",
+            "icon": "crop_3_2",
+            "display": "list",
+            "non-repeat": {
+              "background_odd_top": {
+                "type": "Select",
+                "config": {
+                  "options": ["No", "Yes"],
+                  "default_value": "No",
+                  "label": "Background odd top"
+                }
+              },
+              "space": {
+                "type": "Select",
+                "config": {
+                  "options": ["Block to block", "Before Hero", "Title to block", "Small", "Small 2"],
+                  "default_value": "Block to block",
+                  "label": "Space"
+                }
+              },
+              "background_odd_bottom": {
+                "type": "Select",
+                "config": {
+                  "options": ["No", "Yes"],
+                  "default_value": "No",
+                  "label": "Background odd bottom"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "pricing_simulator": {
+            "type": "Slice",
+            "fieldset": "Pricing simulator",
+            "description": "Pricing simulator",
+            "icon": "adb",
+            "display": "list",
+            "non-repeat": {
+              "proceed_checkout_cta_variant_1": {
+                "type": "Text",
+                "config": {
+                  "label": "proceed_checkout_cta_variant_1"
+                }
+              },
+              "online_support_desc": {
+                "type": "Text",
+                "config": {
+                  "label": "online_support_desc"
+                }
+              },
+              "online_support_help": {
+                "type": "Text",
+                "config": {
+                  "label": "online_support_help"
+                }
+              },
+              "online_support_title": {
+                "type": "Text",
+                "config": {
+                  "label": "online_support_title"
+                }
+              },
+              "step_1": {
+                "type": "Text",
+                "config": {
+                  "label": "step_1"
+                }
+              },
+              "step_2": {
+                "type": "Text",
+                "config": {
+                  "label": "step_2"
+                }
+              },
+              "step_3": {
+                "type": "Text",
+                "config": {
+                  "label": "step_3"
+                }
+              },
+              "step_4": {
+                "type": "Text",
+                "config": {
+                  "label": "step_4"
+                }
+              },
+              "addon": {
+                "type": "Text",
+                "config": {
+                  "label": "addon"
+                }
+              },
+              "cms_help": {
+                "type": "Text",
+                "config": {
+                  "label": "cms_help"
+                }
+              },
+              "virtual_meeting_help": {
+                "type": "Text",
+                "config": {
+                  "label": "virtual_meeting_help"
+                }
+              },
+              "exhibitor_live_chat_help": {
+                "type": "Text",
+                "config": {
+                  "label": "exhibitor_live_chat_help"
+                }
+              },
+              "virtual_booth_help": {
+                "type": "Text",
+                "config": {
+                  "label": "virtual_booth_help"
+                }
+              },
+              "exhibitior_live_chat_text": {
+                "type": "Text",
+                "config": {
+                  "label": "exhibitior_live_chat_text"
+                }
+              },
+              "exhibitor_live_chat": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "exhibitor_live_chat"
+                }
+              },
+              "virutal_booth": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "virutal_booth"
+                }
+              },
+              "virtual_booth": {
+                "type": "Text",
+                "config": {
+                  "label": "virtual booth"
+                }
+              },
+              "virtual_exhibitor_package_title": {
+                "type": "Text",
+                "config": {
+                  "label": "virtual_exhibitor_package_title"
+                }
+              },
+              "virtual_exhibitor_package_desc": {
+                "type": "Text",
+                "config": {
+                  "label": "virtual_exhibitor_package_desc"
+                }
+              },
+              "summary_feature_virtual_1": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_virtual_1"
+                }
+              },
+              "summary_feature_virtual_2": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_virtual_2"
+                }
+              },
+              "summary_feature_virtual_3": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_virtual_3"
+                }
+              },
+              "summary_feature_virtual_4": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_virtual_4"
+                }
+              },
+              "min_volume": {
+                "type": "Text",
+                "config": {
+                  "label": "min_volume"
+                }
+              },
+              "datepicker_label": {
+                "type": "Text",
+                "config": {
+                  "label": "datepicker_label"
+                }
+              },
+              "datepicker_placeholder": {
+                "type": "Text",
+                "config": {
+                  "label": "datepicker_placeholder"
+                }
+              },
+              "arrow_go_backwards": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Arrow Go Backwards"
+                }
+              },
+              "step_1_heading_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                  "label": "Step 1 Heading title"
+                }
+              },
+              "event_app_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Event App Image"
+                }
+              },
+              "image_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                  "label": "Image title"
+                }
+              },
+              "image_subtitle": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                  "label": "Image subtitle"
+                }
+              },
+              "number_of_events_title": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Number of events title"
+                }
+              },
+              "attendees_volume": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Attendees volume"
+                }
+              },
+              "step_1_event_format": {
+                "type": "Text",
+                "config": {
+                  "label": "Step 1 Event Format"
+                }
+              },
+              "virtual": {
+                "type": "Text",
+                "config": {
+                  "label": "Virtual"
+                }
+              },
+              "hybrid": {
+                "type": "Text",
+                "config": {
+                  "label": "Hybrid"
+                }
+              },
+              "in_person": {
+                "type": "Text",
+                "config": {
+                  "label": "In Person"
+                }
+              },
+              "step_1_plan_above_title": {
+                "type": "Text",
+                "config": {
+                  "label": "Step 1 Plan Above Title"
+                }
+              },
+              "step_1_plan_above_description": {
+                "type": "Text",
+                "config": {
+                  "label": "Step 1 Plan Above Description"
+                }
+              },
+              "step_1_attendees": {
+                "type": "Text",
+                "config": {
+                  "label": "Step 1 Attendees"
+                }
+              },
+              "attendees_volume_subparagraph": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Attendees volume subparagraph"
+                }
+              },
+              "step_2_heading_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                  "label": "Step 2 Heading Title"
+                }
+              },
+              "step_2_subtitle": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                  "label": "Step 2 Subtitle"
+                }
+              },
+              "step_2_web_training_title": {
+                "type": "Text",
+                "config": {
+                  "label": "Step 2 Web Training Title"
+                }
+              },
+              "mandatory": {
+                "type": "Text",
+                "config": {
+                  "label": "Mandatory"
+                }
+              },
+              "step_2_web_training_desc": {
+                "type": "Text",
+                "config": {
+                  "label": "Step 2 Web Training Description"
+                }
+              },
+              "step_2_web_training_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Step 2 Web Training Image"
+                }
+              },
+              "step2_branded_app_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Step2 Branded App image"
+                }
+              },
+              "step2_branded_app_title": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step2 Branded App title"
+                }
+              },
+              "step2_start_at_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step2 Start At label"
+                }
+              },
+              "step_2_discount_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step 2 Discount label"
+                }
+              },
+              "step2_branded_app_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step2 Branded App description"
+                }
+              },
+              "step2_floor_plan_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Step2 Floor Plan image"
+                }
+              },
+              "step2_floor_plan_title": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step2 Floor Plan title"
+                }
+              },
+              "step2_floor_plan_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step2 Floor Plan description"
+                }
+              },
+              "step2_dedicated_support_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Step2 Dedicated Support image"
+                }
+              },
+              "step2_dedicated_support_title": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step2 Dedicated Support title"
+                }
+              },
+              "step2_dedicated_support_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step2 Dedicated Support description"
+                }
+              },
+              "step2_on_site_support_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Step2 On_site Support image"
+                }
+              },
+              "step2_on_site_support_title": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step2 On-site support title"
+                }
+              },
+              "step2_on_site_support_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step2 On-site support description"
+                }
+              },
+              "step2_multiple_year_agreement_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Step2 Multiple Year agreement image"
+                }
+              },
+              "step2_multiple_year_agreement_title": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step2 Multiple Year Agreement title"
+                }
+              },
+              "step2_multiple_year_agreement_subtitle": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step2 Multiple Year Agreement subtitle"
+                }
+              },
+              "step2_multiple_year_agreement_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step2 Multiple Year Agreement description"
+                }
+              },
+              "step2_input_placeholder_day_singular": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step2 Input placeholder day singular"
+                }
+              },
+              "step2_input_placeholder_days_plural": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step2 Input placeholder days plural"
+                }
+              },
+              "step_3_heading_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                  "label": "Step 3 Heading Title"
+                }
+              },
+              "step_3_select_exhibitors_package": {
+                "type": "Text",
+                "config": {
+                  "label": "Step 3 Select exhibitors package"
+                }
+              },
+              "step3_heading_subtitle": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 Heading Subtitle"
+                }
+              },
+              "step_3_exhibitors": {
+                "type": "Text",
+                "config": {
+                  "label": "Step 3 Exhibitors"
+                }
+              },
+              "step3_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Step3 Image"
+                }
+              },
+              "step3_image_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                  "label": "Step3 Image Title"
+                }
+              },
+              "step3_image_subtitle": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                  "label": "Step3 Image Subtitle"
+                }
+              },
+              "step3_exhibitors_volume_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 Exhibitors volume label"
+                }
+              },
+              "step3_type_of_exhibitor_services_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 Type of exhibitor services label"
+                }
+              },
+              "step3_type_of_exhibitor_service_most_popular_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 Type of exhibitor service Most popular label"
+                }
+              },
+              "step3_in_bulk_button_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 In Bulk button label"
+                }
+              },
+              "step3_in_bulk_popup_text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 In bulk popup text"
+                }
+              },
+              "step3_a_la_carte_button_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 A La Carte button label"
+                }
+              },
+              "step3_a_la_carte_popup_text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 A La Carte popup text"
+                }
+              },
+              "step_3_services_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step 3 Services label"
+                }
+              },
+              "step3_package_title_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 Package title label"
+                }
+              },
+              "step3_package_description_text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 Package description text"
+                }
+              },
+              "step3_package_meeting_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Step3 Package Meeting image"
+                }
+              },
+              "step3_package_meetings_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 Package Meetings label"
+                }
+              },
+              "step3_package_selling_price_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 Package Selling Price label"
+                }
+              },
+              "step3_meetings_price_input_placeholder": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 Meetings Price Input Placeholder"
+                }
+              },
+              "step3_exhibitor_singular_placeholder": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 Exhibitor (singular) placeholder"
+                }
+              },
+              "step3_exhibitors_plural_placeholder": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 Exhibitors (plural) placeholder"
+                }
+              },
+              "step3_lead_capture_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Step3 Lead Capture image"
+                }
+              },
+              "step3_lead_capture_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 Lead Capture label"
+                }
+              },
+              "step3_lead_capture_price_placeholder": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 Lead Capture price placeholder"
+                }
+              },
+              "step3_content_management_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Step3 Content Management image"
+                }
+              },
+              "step3_content_management_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 Content Management label"
+                }
+              },
+              "step3_content_management_price_placeholder": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 Content Management Price placeholder"
+                }
+              },
+              "step3_or_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 Or label"
+                }
+              },
+              "step3_features_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 Features label"
+                }
+              },
+              "step3_meetings_feature_title": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 Meetings Feature Title"
+                }
+              },
+              "step3_meetings_feature_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 Meetings Feature description"
+                }
+              },
+              "step3_meetings_feature_exhibitors_number_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 Meetings Feature Exhibitors number label"
+                }
+              },
+              "step3_lead_capture_feature_title": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 Lead Capture feature title"
+                }
+              },
+              "step3_lead_capture_feature_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 Lead capture feature description"
+                }
+              },
+              "step3_content_management_feature_title": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 Content Management Feature title"
+                }
+              },
+              "step3_content_management_feature_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step3 Content Management Feature description"
+                }
+              },
+              "step_4_heading_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                  "label": "Step 4 Heading Title"
+                }
+              },
+              "step4_event_app_title": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step4 Event App title"
+                }
+              },
+              "step4_mobile_event_app_subtitle": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step4 Mobile Event App subtitle"
+                }
+              },
+              "step_4_plan_exhibitors_above": {
+                "type": "Text",
+                "config": {
+                  "label": "Step 4 Plan Exhibitors Above"
+                }
+              },
+              "step4_event_singular_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step4 Event (singular) label"
+                }
+              },
+              "step4_events_plural_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Step4 Events (plural) label"
+                }
+              },
+              "event_app_price_label": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Event app price label"
+                }
+              },
+              "event_app_options_price_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Event App Options Price Label"
+                }
+              },
+              "exhibitor_profits_price_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Exhibitor Profits price label"
+                }
+              },
+              "price_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Price label"
+                }
+              },
+              "revenues_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Revenues label"
+                }
+              },
+              "net_proft_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Net proft label"
+                }
+              },
+              "net_loss_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Net Loss label"
+                }
+              },
+              "total_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Total label"
+                }
+              },
+              "package_is_almost_ready_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Package is almost ready label"
+                }
+              },
+              "package_is_ready_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Package is ready label"
+                }
+              },
+              "continue_button_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Continue button label"
+                }
+              },
+              "skip_button_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Skip button label"
+                }
+              },
+              "contact_sales_button_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Contact Sales button label"
+                }
+              },
+              "contact_sales_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Contact sales label"
+                }
+              },
+              "sign_up_label": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Sign Up label"
+                }
+              },
+              "step_4_sign_up_description": {
+                "type": "Text",
+                "config": {
+                  "label": "Step 4 Sign up description"
+                }
+              },
+              "get_in_touch": {
+                "type": "Text",
+                "config": {
+                  "label": "Get In Touch"
+                }
+              },
+              "step_4_exhibitors_volume": {
+                "type": "Text",
+                "config": {
+                  "label": "Step 4 Exhibitors Volume"
+                }
+              },
+              "step_4_exhibitors_global_package": {
+                "type": "Text",
+                "config": {
+                  "label": "Step 4 Exhibitors Global Package"
+                }
+              },
+              "plan_with_option_title": {
+                "type": "Text",
+                "config": {
+                  "label": "Plan With Option Title"
+                }
+              },
+              "plan_with_option_description": {
+                "type": "Text",
+                "config": {
+                  "label": "Plan With Option Description"
+                }
+              },
+              "exhibitors": {
+                "type": "Text",
+                "config": {
+                  "label": "Exhibitors"
+                }
+              },
+              "or": {
+                "type": "Text",
+                "config": {
+                  "label": "OR"
+                }
+              },
+              "summary_feature_1": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_1"
+                }
+              },
+              "summary_feature_2": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_2"
+                }
+              },
+              "summary_feature_3": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_3"
+                }
+              },
+              "summary_feature_4": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_4"
+                }
+              },
+              "summary_feature_5": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_5"
+                }
+              },
+              "summary_feature_6": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_6"
+                }
+              },
+              "summary_feature_7": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_7"
+                }
+              },
+              "summary_feature_8": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_8"
+                }
+              },
+              "summary_feature_9": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_9"
+                }
+              },
+              "summary_feature_10": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_10"
+                }
+              },
+              "summary_feature_11": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_11"
+                }
+              },
+              "summary_feature_12": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_12"
+                }
+              },
+              "summary_feature_13": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_13"
+                }
+              },
+              "summary_feature_14": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_14"
+                }
+              },
+              "summary_feature_15": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_15"
+                }
+              },
+              "summary_feature_16": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_16"
+                }
+              },
+              "summary_feature_17": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_17"
+                }
+              },
+              "summary_feature_18": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_18"
+                }
+              },
+              "summary_feature_19": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_19"
+                }
+              },
+              "summary_feature_20": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_20"
+                }
+              },
+              "summary_feature_21": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_21"
+                }
+              },
+              "summary_feature_22": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_22"
+                }
+              },
+              "summary_feature_23": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_23"
+                }
+              },
+              "summary_feature_24": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_24"
+                }
+              },
+              "summary_feature_25": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_25"
+                }
+              },
+              "summary_feature_title_1": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_title_1"
+                }
+              },
+              "summary_feature_title_2": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_title_2"
+                }
+              },
+              "summary_feature_title_3": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_title_3"
+                }
+              },
+              "summary_feature_title_4": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_title_4"
+                }
+              },
+              "summary_feature_title_5": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_title_5"
+                }
+              },
+              "summary_feature_quote": {
+                "type": "Text",
+                "config": {
+                  "label": "summary_feature_quote"
+                }
+              },
+              "summary_feature_logo": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "summary_feature_logo"
+                }
+              },
+              "summary_feature_persona": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "summary_feature_persona"
+                }
+              },
+              "faq_header": {
+                "type": "Text",
+                "config": {
+                  "label": "FAQ Header"
+                }
+              },
+              "buy_credits": {
+                "type": "Text",
+                "config": {
+                  "label": "Buy credits"
+                }
+              },
+              "summary_title": {
+                "type": "Text",
+                "config": {
+                  "label": "Summary Title"
+                }
+              },
+              "summary_sub_title": {
+                "type": "Text",
+                "config": {
+                  "label": "Summary Sub Title"
+                }
+              },
+              "more_info": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "hyperlink",
+                  "allowTargetBlank": true,
+                  "label": "More info"
+                }
+              },
+              "virtual_exhibitor_title": {
+                "type": "Text",
+                "config": {
+                  "label": "Virtual Exhibitor Title"
+                }
+              },
+              "virtual_exhibitor_description": {
+                "type": "Text",
+                "config": {
+                  "label": "Virtual Exhibitor Description"
+                }
+              },
+              "virtual_exhibitor_feature_1": {
+                "type": "Text",
+                "config": {
+                  "label": "Virtual Exhibitor Feature 1"
+                }
+              },
+              "virtual_exhibitor_feature_2": {
+                "type": "Text",
+                "config": {
+                  "label": "Virtual Exhibitor Feature 2"
+                }
+              },
+              "virtual_exhibitor_feature_3": {
+                "type": "Text",
+                "config": {
+                  "label": "Virtual Exhibitor Feature 3"
+                }
+              },
+              "summary_feature_branded_app": {
+                "type": "Text",
+                "config": {
+                  "label": "Summary Feature Branded App"
+                }
+              },
+              "summary_feature_dedicated_support": {
+                "type": "Text",
+                "config": {
+                  "label": "Summary Feature Dedicated Support"
+                }
+              },
+              "summary_feature_onsite_support": {
+                "type": "Text",
+                "config": {
+                  "label": "Summary Feature Onsite Support"
+                }
+              },
+              "summary_feature_title_options": {
+                "type": "Text",
+                "config": {
+                  "label": "Summary Feature Title Options"
+                }
+              },
+              "summary_feature_title_exhibitors": {
+                "type": "Text",
+                "config": {
+                  "label": "Summary Feature Title Exhibitors"
+                }
+              },
+              "summary_feature_lead_retriveal": {
+                "type": "Text",
+                "config": {
+                  "label": "Summary Feature Lead Retriveal"
+                }
+              },
+              "summary_feature_meetings": {
+                "type": "Text",
+                "config": {
+                  "label": "Summary Feature Meetings"
+                }
+              },
+              "summary_feature_cms": {
+                "type": "Text",
+                "config": {
+                  "label": "Summary Feature CMS"
+                }
+              },
+              "summary_feature_exhibitor_package": {
+                "type": "Text",
+                "config": {
+                  "label": "Summary Feature Exhibitor Package"
+                }
+              },
+              "summary_feature_roundtable": {
+                "type": "Text",
+                "config": {
+                  "label": "Summary Feature Roundtable"
+                }
+              }
+            },
+            "repeat": {
+              "faq_title": {
+                "type": "Text",
+                "config": {
+                  "label": "FAQ Title"
+                }
+              },
+              "faq_answer": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "FAQ Answer"
+                }
+              }
+            }
+          },
+          "contact_v2_form": {
+            "type": "Slice",
+            "fieldset": "Contact V2 Form",
+            "description": "Contact form for pricing simulator",
+            "icon": "compare_arrows",
+            "display": "list",
+            "non-repeat": {
+              "title": {
+                "type": "Text",
+                "config": {
+                  "label": "Title"
+                }
+              },
+              "sub_title": {
+                "type": "Text",
+                "config": {
+                  "label": "Sub Title"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "list-item, o-list-item",
+                  "label": "Description"
+                }
+              },
+              "hubspot_form_id": {
+                "type": "Text",
+                "config": {
+                  "label": "Hubspot Form Id"
+                }
+              },
+              "trusted_by": {
+                "type": "Text",
+                "config": {
+                  "label": "Trusted By"
+                }
+              },
+              "back_homepage": {
+                "type": "Text",
+                "config": {
+                  "label": "Back homepage"
+                }
+              }
+            },
+            "repeat": {
+              "logo": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "logo"
+                }
+              }
+            }
+          },
+          "checkout": {
+            "type": "Slice",
+            "fieldset": "Checkout",
+            "description": "Checkout Swapcard",
+            "icon": "add_circle",
+            "display": "list",
+            "non-repeat": {
+              "online_support_virtual_help": {
+                "type": "Text",
+                "config": {
+                  "label": "online_support_virtual_help"
+                }
+              },
+              "online_support_virtual": {
+                "type": "Text",
+                "config": {
+                  "label": "online_support_virtual"
+                }
+              },
+              "online_support_help": {
+                "type": "Text",
+                "config": {
+                  "label": "online_support_help"
+                }
+              },
+              "online_support": {
+                "type": "Text",
+                "config": {
+                  "label": "online_support"
+                }
+              },
+              "account_information": {
+                "type": "Text",
+                "config": {
+                  "label": "Account Information"
+                }
+              },
+              "first_name": {
+                "type": "Text",
+                "config": {
+                  "label": "First Name"
+                }
+              },
+              "first_name_error": {
+                "type": "Text",
+                "config": {
+                  "label": "First Name Error"
+                }
+              },
+              "last_name": {
+                "type": "Text",
+                "config": {
+                  "label": "Last Name"
+                }
+              },
+              "last_name_error": {
+                "type": "Text",
+                "config": {
+                  "label": "Last Name Error"
+                }
+              },
+              "email": {
+                "type": "Text",
+                "config": {
+                  "label": "Email"
+                }
+              },
+              "email_error": {
+                "type": "Text",
+                "config": {
+                  "label": "Email Error"
+                }
+              },
+              "organization": {
+                "type": "Text",
+                "config": {
+                  "label": "organization"
+                }
+              },
+              "organization_error": {
+                "type": "Text",
+                "config": {
+                  "label": "Organization Error"
+                }
+              },
+              "should_create_event_label": {
+                "type": "Text",
+                "config": {
+                  "label": "should_create_event_label"
+                }
+              },
+              "create_event_button": {
+                "type": "Text",
+                "config": {
+                  "label": "create_event_button"
+                }
+              },
+              "city": {
+                "type": "Text",
+                "config": {
+                  "label": "City"
+                }
+              },
+              "city_error": {
+                "type": "Text",
+                "config": {
+                  "label": "City Error"
+                }
+              },
+              "country": {
+                "type": "Text",
+                "config": {
+                  "label": "Country"
+                }
+              },
+              "country_select": {
+                "type": "Text",
+                "config": {
+                  "label": "Country Select"
+                }
+              },
+              "country_error": {
+                "type": "Text",
+                "config": {
+                  "label": "Country Error"
+                }
+              },
+              "billing_information": {
+                "type": "Text",
+                "config": {
+                  "label": "Billing Information"
+                }
+              },
+              "address": {
+                "type": "Text",
+                "config": {
+                  "label": "Address"
+                }
+              },
+              "address_error": {
+                "type": "Text",
+                "config": {
+                  "label": "Address Error"
+                }
+              },
+              "zip_code": {
+                "type": "Text",
+                "config": {
+                  "label": "Zip Code"
+                }
+              },
+              "zip_code_error": {
+                "type": "Text",
+                "config": {
+                  "label": "Zip code error"
+                }
+              },
+              "state": {
+                "type": "Text",
+                "config": {
+                  "label": "State"
+                }
+              },
+              "state_error": {
+                "type": "Text",
+                "config": {
+                  "label": "State Error"
+                }
+              },
+              "buy_now": {
+                "type": "Text",
+                "config": {
+                  "label": "Buy now"
+                }
+              },
+              "order_summary": {
+                "type": "Text",
+                "config": {
+                  "label": "Order summary"
+                }
+              },
+              "credits_title": {
+                "type": "Text",
+                "config": {
+                  "label": "Credits Title"
+                }
+              },
+              "credits_content": {
+                "type": "Text",
+                "config": {
+                  "label": "Credits Content"
+                }
+              },
+              "stripe_redirection": {
+                "type": "Text",
+                "config": {
+                  "label": "Stripe redirection"
+                }
+              },
+              "have_more_question": {
+                "type": "Text",
+                "config": {
+                  "label": "Have More Question"
+                }
+              },
+              "total": {
+                "type": "Text",
+                "config": {
+                  "label": "total"
+                }
+              },
+              "go_back": {
+                "type": "Text",
+                "config": {
+                  "label": "go_back"
+                }
+              },
+              "virtual_events": {
+                "type": "Text",
+                "config": {
+                  "label": "virtual_events"
+                }
+              },
+              "attendees_credits": {
+                "type": "Text",
+                "config": {
+                  "label": "attendees_credits"
+                }
+              },
+              "exhibitorvolume": {
+                "type": "Text",
+                "config": {
+                  "label": "exhibitorVolume"
+                }
+              },
+              "onsite_support": {
+                "type": "Text",
+                "config": {
+                  "label": "onsite_support"
+                }
+              },
+              "onsite_support_days": {
+                "type": "Text",
+                "config": {
+                  "label": "onsite_support_days"
+                }
+              },
+              "dedicated_support": {
+                "type": "Text",
+                "config": {
+                  "label": "dedicated_support"
+                }
+              },
+              "dedicated_support_days": {
+                "type": "Text",
+                "config": {
+                  "label": "dedicated_support_days"
+                }
+              },
+              "web_training": {
+                "type": "Text",
+                "config": {
+                  "label": "web_training"
+                }
+              },
+              "global_exhibitor_package": {
+                "type": "Text",
+                "config": {
+                  "label": "global_exhibitor_package"
+                }
+              },
+              "virtual_exhibitor": {
+                "type": "Text",
+                "config": {
+                  "label": "virtual_exhibitor"
+                }
+              },
+              "meetings": {
+                "type": "Text",
+                "config": {
+                  "label": "meetings"
+                }
+              },
+              "cms": {
+                "type": "Text",
+                "config": {
+                  "label": "cms"
+                }
+              },
+              "lead_scan": {
+                "type": "Text",
+                "config": {
+                  "label": "lead_scan"
+                }
+              },
+              "included": {
+                "type": "Text",
+                "config": {
+                  "label": "included"
+                }
+              },
+              "event_app": {
+                "type": "Text",
+                "config": {
+                  "label": "event_app"
+                }
+              },
+              "please_select": {
+                "type": "Text",
+                "config": {
+                  "label": "please_select"
+                }
+              },
+              "company": {
+                "type": "Text",
+                "config": {
+                  "label": "company"
+                }
+              },
+              "company_error": {
+                "type": "Text",
+                "config": {
+                  "label": "company_error"
+                }
+              },
+              "province": {
+                "type": "Text",
+                "config": {
+                  "label": "province"
+                }
+              },
+              "province_error": {
+                "type": "Text",
+                "config": {
+                  "label": "province_error"
+                }
+              },
+              "contact_us": {
+                "type": "Text",
+                "config": {
+                  "label": "contact_us"
+                }
+              },
+              "cgu": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "hyperlink",
+                  "allowTargetBlank": true,
+                  "label": "CGU"
+                }
+              },
+              "credit_card_title": {
+                "type": "Text",
+                "config": {
+                  "label": "credit_card_title"
+                }
+              },
+              "credit_card_help": {
+                "type": "Text",
+                "config": {
+                  "label": "credit_card_help"
+                }
+              },
+              "branded_app": {
+                "type": "Text",
+                "config": {
+                  "label": "branded_app"
+                }
+              },
+              "virtual_exhibitor_package": {
+                "type": "Text",
+                "config": {
+                  "label": "virtual_exhibitor_package"
+                }
+              },
+              "total_options": {
+                "type": "Text",
+                "config": {
+                  "label": "Total Options"
+                }
+              },
+              "total_exhibitors": {
+                "type": "Text",
+                "config": {
+                  "label": "Total Exhibitors"
+                }
+              },
+              "total_support": {
+                "type": "Text",
+                "config": {
+                  "label": "Total Support"
+                }
+              },
+              "loading": {
+                "type": "Text",
+                "config": {
+                  "label": "Loading"
+                }
+              },
+              "exhibitor_package": {
+                "type": "Text",
+                "config": {
+                  "label": "exhibitor_package"
+                }
+              },
+              "branded_app_help": {
+                "type": "Text",
+                "config": {
+                  "label": "branded_app_help"
+                }
+              },
+              "attendees_credit_help": {
+                "type": "Text",
+                "config": {
+                  "label": "attendees_credit_help"
+                }
+              },
+              "onsite_support_help": {
+                "type": "Text",
+                "config": {
+                  "label": "onsite_support_help"
+                }
+              },
+              "dedicated_support_help": {
+                "type": "Text",
+                "config": {
+                  "label": "dedicated_support_help"
+                }
+              },
+              "exhibitor_global_package_help": {
+                "type": "Text",
+                "config": {
+                  "label": "exhibitor_global_package_help"
+                }
+              },
+              "exhibitor_virtual_help": {
+                "type": "Text",
+                "config": {
+                  "label": "exhibitor_virtual_help"
+                }
+              },
+              "meetings_help": {
+                "type": "Text",
+                "config": {
+                  "label": "meetings_help"
+                }
+              },
+              "exhibitor_volume_help": {
+                "type": "Text",
+                "config": {
+                  "label": "exhibitor_volume_help"
+                }
+              },
+              "lead_capture_help": {
+                "type": "Text",
+                "config": {
+                  "label": "lead_capture_help"
+                }
+              },
+              "cms_help": {
+                "type": "Text",
+                "config": {
+                  "label": "cms_help"
+                }
+              },
+              "web_training_help": {
+                "type": "Text",
+                "config": {
+                  "label": "web_training_help"
+                }
+              },
+              "virtual_feature_help": {
+                "type": "Text",
+                "config": {
+                  "label": "virtual_feature_help"
+                }
+              },
+              "event_app_help": {
+                "type": "Text",
+                "config": {
+                  "label": "event_app_help"
+                }
+              },
+              "login_or_signup": {
+                "type": "Text",
+                "config": {
+                  "label": "login_or_signup"
+                }
+              },
+              "login_or_signup_button": {
+                "type": "Text",
+                "config": {
+                  "label": "login_or_signup_button"
+                }
+              },
+              "signup_button_old": {
+                "type": "Text",
+                "config": {
+                  "label": "signup_button_old"
+                }
+              },
+              "signup_button": {
+                "type": "Text",
+                "config": {
+                  "label": "signup_button"
+                }
+              },
+              "vat": {
+                "type": "Text",
+                "config": {
+                  "label": "vat"
+                }
+              },
+              "subtotal": {
+                "type": "Text",
+                "config": {
+                  "label": "subtotal"
+                }
+              },
+              "with_tax": {
+                "type": "Text",
+                "config": {
+                  "label": "with_tax"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "checkout_confirmation": {
+            "type": "Slice",
+            "fieldset": "Checkout Valid",
+            "description": "Confirmation",
+            "icon": "face",
+            "display": "list",
+            "non-repeat": {
+              "congrats": {
+                "type": "Text",
+                "config": {
+                  "label": "Congrats"
+                }
+              },
+              "block_1": {
+                "type": "Text",
+                "config": {
+                  "label": "Block 1"
+                }
+              },
+              "block_2": {
+                "type": "Text",
+                "config": {
+                  "label": "Block 2"
+                }
+              },
+              "block_3": {
+                "type": "Text",
+                "config": {
+                  "label": "Block 3"
+                }
+              },
+              "cta": {
+                "type": "Text",
+                "config": {
+                  "label": "CTA"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "marvelapp": {
+            "type": "Slice",
+            "fieldset": "Marvelapp",
+            "description": "Marvelapp iframe",
+            "icon": "access_alarm",
+            "display": "list",
+            "non-repeat": {
+              "marvelapp_id": {
+                "type": "Text",
+                "config": {
+                  "label": "marvelapp_id"
+                }
+              },
+              "desktop_only": {
+                "type": "Text",
+                "config": {
+                  "label": "desktop_only"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "_1_title_and_subtitle": {
+            "type": "Slice",
+            "fieldset": "#1 Title and Subtitle",
+            "description": "Title and subtitle alone",
+            "icon": "title",
+            "display": "list",
+            "non-repeat": {
+              "display": {
+                "type": "Select",
+                "config": {
+                  "options": ["Yes", "No"],
+                  "default_value": "Yes",
+                  "label": "Display"
+                }
+              },
+              "background_odd": {
+                "type": "Select",
+                "config": {
+                  "options": ["No", "Yes"],
+                  "default_value": "No",
+                  "label": "Background odd"
+                }
+              },
+              "picto_size": {
+                "type": "Select",
+                "config": {
+                  "options": ["Standard", "Big"],
+                  "default_value": "Standard",
+                  "label": "Picto Size"
+                }
+              },
+              "picto_class": {
+                "type": "Text",
+                "config": {
+                  "label": "Picto class"
+                }
+              },
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                  "label": "Title"
+                }
+              },
+              "font_size": {
+                "type": "Select",
+                "config": {
+                  "options": ["Size 1", "Size 2", "Size 3", "Size 4", "Size 5", "Size 46px"],
+                  "default_value": "Size 1",
+                  "label": "Font Size"
+                }
+              },
+              "color_title": {
+                "type": "Select",
+                "config": {
+                  "options": ["Primary", "Secondary"],
+                  "default_value": "Primary",
+                  "label": "Color Title",
+                  "placeholder": "Blue then Green"
+                }
+              },
+              "subtitle": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Subtitle"
+                }
+              },
+              "divider_title": {
+                "type": "Select",
+                "config": {
+                  "options": ["No", "Yes"],
+                  "default_value": "No",
+                  "label": "Divider title"
+                }
+              },
+              "new": {
+                "type": "Select",
+                "config": {
+                  "options": ["No", "Yes"],
+                  "default_value": "No",
+                  "label": "New"
+                }
+              },
+              "new_label": {
+                "type": "Text",
+                "config": {
+                  "label": "new label"
+                }
+              },
+              "scroll_id": {
+                "type": "Text",
+                "config": {
+                  "label": "Scroll Id"
+                }
+              },
+              "back_link": {
+                "type": "Text",
+                "config": {
+                  "label": "Back link"
+                }
+              },
+              "back_link_anchor": {
+                "type": "Text",
+                "config": {
+                  "label": "Back link anchor"
+                }
+              },
+              "back_link_v2": {
+                "type": "Link",
+                "config": {
+                  "label": "Back link V2",
+                  "select": null
+                }
+              },
+              "custom_color": {
+                "type": "Color",
+                "config": {
+                  "label": "Custom color"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "_5_get_in_touch": {
+            "type": "Slice",
+            "fieldset": "#5 Get In Touch",
+            "description": "Blue or grey banner full width",
+            "icon": "album",
+            "display": "list",
+            "non-repeat": {
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                  "label": "Title"
+                }
+              },
+              "body1": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Body"
+                }
+              },
+              "button_type": {
+                "type": "Select",
+                "config": {
+                  "options": [
+                    "Demo request",
+                    "Contact form",
+                    "Download app",
+                    "Support link attendees",
+                    "Support link exhibitors",
+                    "Free",
+                    "Other"
+                  ],
+                  "default_value": "Demo request",
+                  "label": "Button type"
+                }
+              },
+              "theme": {
+                "type": "Select",
+                "config": {
+                  "options": ["Blue", "Grey"],
+                  "default_value": "Blue",
+                  "label": "Theme"
+                }
+              },
+              "margin": {
+                "type": "Select",
+                "config": {
+                  "options": ["Default", "Big", "Medium", "Small"],
+                  "default_value": "Default",
+                  "label": "Margin"
+                }
+              },
+              "custom_link": {
+                "type": "Text",
+                "config": {
+                  "label": "Custom link"
+                }
+              },
+              "custom_link_v2": {
+                "type": "Link",
+                "config": {
+                  "label": "Custom link v2",
+                  "select": null
+                }
+              },
+              "custom_label": {
+                "type": "Text",
+                "config": {
+                  "label": "Custom label"
+                }
+              },
+              "custom_background_color": {
+                "type": "Color",
+                "config": {
+                  "label": "Custom background color"
+                }
+              },
+              "second_button": {
+                "type": "Select",
+                "config": {
+                  "options": ["Demo", "Get started", "Secondary Free Button"],
+                  "label": "Second button"
+                }
+              },
+              "secondary_free_label": {
+                "type": "Text",
+                "config": {
+                  "label": "Secondary free label"
+                }
+              },
+              "secondary_free_link": {
+                "type": "Link",
+                "config": {
+                  "label": "Secondary free link",
+                  "select": null
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "credits": {
+            "type": "Slice",
+            "fieldset": "Credits",
+            "description": "Organizer credits",
+            "icon": "equalizer",
+            "display": "list",
+            "non-repeat": {
+              "title": {
+                "type": "Text",
+                "config": {
+                  "label": "Title"
+                }
+              },
+              "select_your_organization": {
+                "type": "Text",
+                "config": {
+                  "label": "Select your organization"
+                }
+              },
+              "organization_dropdown_placeholder": {
+                "type": "Text",
+                "config": {
+                  "label": "Organization Dropdown Placeholder"
+                }
+              },
+              "events": {
+                "type": "Text",
+                "config": {
+                  "label": "Events"
+                }
+              },
+              "event_name": {
+                "type": "Text",
+                "config": {
+                  "label": "Event name"
+                }
+              },
+              "begins_at": {
+                "type": "Text",
+                "config": {
+                  "label": "Begins at"
+                }
+              },
+              "people": {
+                "type": "Text",
+                "config": {
+                  "label": "People"
+                }
+              },
+              "exhibitors": {
+                "type": "Text",
+                "config": {
+                  "label": "Exhibitors"
+                }
+              },
+              "total": {
+                "type": "Text",
+                "config": {
+                  "label": "Total"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "build_plan_saas": {
+            "type": "Slice",
+            "fieldset": "Build Plan SaaS",
+            "description": "Build Plan Without Payment",
+            "icon": "face",
+            "display": "list",
+            "non-repeat": {
+              "define_volume_attendee": {
+                "type": "Text",
+                "config": {
+                  "label": "define_volume_attendee"
+                }
+              },
+              "white_label_title": {
+                "type": "Text",
+                "config": {
+                  "label": "white_label_title"
+                }
+              },
+              "white_label_content": {
+                "type": "Text",
+                "config": {
+                  "label": "white_label_content"
+                }
+              },
+              "month": {
+                "type": "Text",
+                "config": {
+                  "label": "month"
+                }
+              },
+              "event_date": {
+                "type": "Text",
+                "config": {
+                  "label": "event_date"
+                }
+              },
+              "community_plan_desc": {
+                "type": "Text",
+                "config": {
+                  "label": "community_plan_desc"
+                }
+              },
+              "community_plan_title": {
+                "type": "Text",
+                "config": {
+                  "label": "community_plan_title"
+                }
+              },
+              "community_plan_img": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "community_plan_img"
+                }
+              },
+              "event_plan_title": {
+                "type": "Text",
+                "config": {
+                  "label": "event_plan_title"
+                }
+              },
+              "event_plan_desc": {
+                "type": "Text",
+                "config": {
+                  "label": "event_plan_desc"
+                }
+              },
+              "event_plan_img": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "event_plan_img"
+                }
+              },
+              "free_plan_desc": {
+                "type": "Text",
+                "config": {
+                  "label": "free_plan_desc"
+                }
+              },
+              "free_plan_title": {
+                "type": "Text",
+                "config": {
+                  "label": "free_plan_title"
+                }
+              },
+              "free_plan_img": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "free_plan_img"
+                }
+              },
+              "meetup_plan_title": {
+                "type": "Text",
+                "config": {
+                  "label": "meetup_plan_title"
+                }
+              },
+              "meetup_plan_desc": {
+                "type": "Text",
+                "config": {
+                  "label": "meetup_plan_desc"
+                }
+              },
+              "meetup_plan_img": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "meetup_plan_img"
+                }
+              },
+              "step_1": {
+                "type": "Text",
+                "config": {
+                  "label": "step 1"
+                }
+              },
+              "step_2": {
+                "type": "Text",
+                "config": {
+                  "label": "step 2"
+                }
+              },
+              "step_3": {
+                "type": "Text",
+                "config": {
+                  "label": "step 3"
+                }
+              },
+              "step_4": {
+                "type": "Text",
+                "config": {
+                  "label": "step 4"
+                }
+              },
+              "number_of_events": {
+                "type": "Text",
+                "config": {
+                  "label": "number_of_events"
+                }
+              },
+              "continue": {
+                "type": "Text",
+                "config": {
+                  "label": "continue"
+                }
+              },
+              "contact_sales": {
+                "type": "Text",
+                "config": {
+                  "label": "contact_sales"
+                }
+              },
+              "package_almost_ready": {
+                "type": "Text",
+                "config": {
+                  "label": "package_almost_ready"
+                }
+              },
+              "attendees_volume": {
+                "type": "Text",
+                "config": {
+                  "label": "attendees_volume"
+                }
+              },
+              "exhibitors_volume": {
+                "type": "Text",
+                "config": {
+                  "label": "exhibitors_volume"
+                }
+              },
+              "attendees_volume_info": {
+                "type": "Text",
+                "config": {
+                  "label": "attendees_volume_info"
+                }
+              },
+              "exhibitors_volume_info": {
+                "type": "Text",
+                "config": {
+                  "label": "exhibitors_volume_info"
+                }
+              },
+              "need_some_help": {
+                "type": "Text",
+                "config": {
+                  "label": "need_some_help"
+                }
+              },
+              "get_in_touch_phone_number": {
+                "type": "Text",
+                "config": {
+                  "label": "get_in_touch_phone_number"
+                }
+              },
+              "select_the_service_you_need": {
+                "type": "Text",
+                "config": {
+                  "label": "select_the_service_you_need"
+                }
+              },
+              "dedicated_event_expert": {
+                "type": "Text",
+                "config": {
+                  "label": "dedicated_event_expert"
+                }
+              },
+              "dedicated_event_expert_desc": {
+                "type": "Text",
+                "config": {
+                  "label": "dedicated_event_expert_desc"
+                }
+              },
+              "onsite_support": {
+                "type": "Text",
+                "config": {
+                  "label": "onsite_support"
+                }
+              },
+              "onsite_support_desc": {
+                "type": "Text",
+                "config": {
+                  "label": "onsite_support_desc"
+                }
+              },
+              "select_additional_modules_you_need": {
+                "type": "Text",
+                "config": {
+                  "label": "select_additional_modules_you_need"
+                }
+              },
+              "registration": {
+                "type": "Text",
+                "config": {
+                  "label": "registration"
+                }
+              },
+              "registration_desc": {
+                "type": "Text",
+                "config": {
+                  "label": "registration_desc"
+                }
+              },
+              "streaming": {
+                "type": "Text",
+                "config": {
+                  "label": "streaming"
+                }
+              },
+              "streaming_desc": {
+                "type": "Text",
+                "config": {
+                  "label": "streaming_desc"
+                }
+              },
+              "abstract_management": {
+                "type": "Text",
+                "config": {
+                  "label": "abstract_management"
+                }
+              },
+              "abstract_management_desc": {
+                "type": "Text",
+                "config": {
+                  "label": "abstract_management_desc"
+                }
+              },
+              "lead_capture": {
+                "type": "Text",
+                "config": {
+                  "label": "lead_capture"
+                }
+              },
+              "lead_capture_desc": {
+                "type": "Text",
+                "config": {
+                  "label": "lead_capture_desc"
+                }
+              }
+            },
+            "repeat": {}
+          }
+        }
+      }
+    }
+  },
+  "Meta": {
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "choices": {
+          "meta": {
+            "type": "Slice",
+            "fieldset": "Meta",
+            "description": "All meta needed for configuration",
+            "icon": "add_circle",
+            "display": "list",
+            "non-repeat": {
+              "meta_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                  "label": "Meta Title"
+                }
+              },
+              "meta_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Meta Description"
+                }
+              },
+              "slug": {
+                "type": "Text",
+                "config": {
+                  "label": "slug",
+                  "placeholder": "In french, start with \"/\""
+                }
+              },
+              "route": {
+                "type": "Text",
+                "config": {
+                  "label": "route",
+                  "placeholder": "HAS TO BE THE SAME BETWEEN EACH SAME PAGES"
+                }
+              },
+              "published": {
+                "type": "Select",
+                "config": {
+                  "options": ["Yes", "No"],
+                  "default_value": "Yes",
+                  "label": "Published"
+                }
+              },
+              "layout": {
+                "type": "Text",
+                "config": {
+                  "label": "layout"
+                }
+              },
+              "type": {
+                "type": "Text",
+                "config": {
+                  "label": "type"
+                }
+              },
+              "background_color": {
+                "type": "Color",
+                "config": {
+                  "label": "Background color"
+                }
+              },
+              "meta_card": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Meta Card"
+                }
+              }
+            },
+            "repeat": {}
+          }
+        }
+      }
+    }
+  }
+}

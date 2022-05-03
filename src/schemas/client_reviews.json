@@ -1,0 +1,39 @@
+{
+  "Main": {
+    "client_name": {
+      "type": "Text",
+      "config": {
+        "label": "Client Name"
+      }
+    },
+    "description": {
+      "type": "Text",
+      "config": {
+        "label": "Description"
+      }
+    },
+    "color": {
+      "type": "Select",
+      "config": {
+        "options": ["gray", "blue", "lightblue", "purple"],
+        "label": "Color"
+      }
+    },
+    "image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Image"
+      }
+    },
+    "small_icon": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Small Icon"
+      }
+    }
+  }
+}

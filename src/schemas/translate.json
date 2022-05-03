@@ -1,0 +1,506 @@
+{
+  "Main": {
+    "title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+        "label": "Title"
+      }
+    },
+    "login_attendees_exhibitors_title": {
+      "type": "Text",
+      "config": {
+        "label": "login_attendees_exhibitors_title"
+      }
+    },
+    "login_attendees_exhibitors_body": {
+      "type": "Text",
+      "config": {
+        "label": "login_attendees_exhibitors_body"
+      }
+    },
+    "login_organizers_title": {
+      "type": "Text",
+      "config": {
+        "label": "login_organizers_title"
+      }
+    },
+    "login_organizers_body": {
+      "type": "Text",
+      "config": {
+        "label": "login_organizers_body"
+      }
+    },
+    "cookie_banner": {
+      "type": "Text",
+      "config": {
+        "label": "cookie_banner"
+      }
+    },
+    "cookie_banner_cta": {
+      "type": "Text",
+      "config": {
+        "label": "cookie_banner_cta"
+      }
+    },
+    "cookie_cta_success": {
+      "type": "Text",
+      "config": {
+        "label": "cookie_cta_success"
+      }
+    },
+    "cta": {
+      "type": "Text",
+      "config": {
+        "label": "cta"
+      }
+    },
+    "pricing": {
+      "type": "Text",
+      "config": {
+        "label": "pricing"
+      }
+    },
+    "login": {
+      "type": "Text",
+      "config": {
+        "label": "login"
+      }
+    },
+    "resources_exhibitors": {
+      "type": "Text",
+      "config": {
+        "label": "resources_exhibitors"
+      }
+    },
+    "about_contact": {
+      "type": "Text",
+      "config": {
+        "label": "about_contact"
+      }
+    },
+    "knowledge_center": {
+      "type": "Text",
+      "config": {
+        "label": "knowledge_center"
+      }
+    },
+    "legal_terms_of_use": {
+      "type": "Text",
+      "config": {
+        "label": "legal_terms_of_use"
+      }
+    },
+    "legal_privacy_policy": {
+      "type": "Text",
+      "config": {
+        "label": "legal_privacy_policy"
+      }
+    },
+    "legal_cookie": {
+      "type": "Text",
+      "config": {
+        "label": "legal_cookie"
+      }
+    },
+    "features_overview": {
+      "type": "Text",
+      "config": {
+        "label": "features_overview"
+      }
+    }
+  },
+  "Meta": {
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "choices": {
+          "meta": {
+            "type": "Slice",
+            "fieldset": "Meta",
+            "description": "All meta needed for configuration",
+            "icon": "golf_course",
+            "display": "list",
+            "non-repeat": {
+              "meta_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                  "label": "Meta Title"
+                }
+              },
+              "meta_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                  "label": "Meta Description"
+                }
+              },
+              "slug": {
+                "type": "Text",
+                "config": {
+                  "label": "slug"
+                }
+              },
+              "group": {
+                "type": "Text",
+                "config": {
+                  "label": "group"
+                }
+              },
+              "layout": {
+                "type": "Text",
+                "config": {
+                  "label": "layout"
+                }
+              }
+            },
+            "repeat": {}
+          }
+        }
+      }
+    }
+  },
+  "Menu 2": {
+    "body1": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "choices": {
+          "navigation_item": {
+            "type": "Slice",
+            "fieldset": "Navigation Item",
+            "description": "Top menu",
+            "icon": "menu",
+            "display": "list",
+            "non-repeat": {
+              "navigation": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                  "label": "Navigation"
+                }
+              },
+              "navigation_main_link": {
+                "type": "Text",
+                "config": {
+                  "label": "Navigation Main Link"
+                }
+              },
+              "main_menu_link": {
+                "type": "Link",
+                "config": {
+                  "label": "Main Menu Link",
+                  "select": null
+                }
+              }
+            },
+            "repeat": {
+              "navigation_item": {
+                "type": "Text",
+                "config": {
+                  "label": "Navigation Item"
+                }
+              },
+              "navigation_subtitle": {
+                "type": "Text",
+                "config": {
+                  "label": "Navigation Subtitle"
+                }
+              },
+              "navigation_link": {
+                "type": "Text",
+                "config": {
+                  "label": "Navigation Link"
+                }
+              },
+              "navigation_link_v2": {
+                "type": "Link",
+                "config": {
+                  "select": "document",
+                  "label": "Navigation Link V2"
+                }
+              },
+              "new": {
+                "type": "Select",
+                "config": {
+                  "options": ["No", "Yes"],
+                  "default_value": "No",
+                  "label": "New"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Footer 2": {
+    "body2": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "choices": {
+          "footer": {
+            "type": "Slice",
+            "fieldset": "Footer",
+            "description": "Footer items",
+            "icon": "fiber_pin",
+            "display": "list",
+            "non-repeat": {
+              "title_footer": {
+                "type": "Text",
+                "config": {
+                  "label": "Title footer"
+                }
+              }
+            },
+            "repeat": {
+              "link_anchor": {
+                "type": "Text",
+                "config": {
+                  "label": "Link Anchor"
+                }
+              },
+              "link_slug": {
+                "type": "Text",
+                "config": {
+                  "label": "Link Slug"
+                }
+              },
+              "link_slug_v2": {
+                "type": "Link",
+                "config": {
+                  "label": "Link Slug V2",
+                  "select": null
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Attendees bar": {
+    "is_attendee_": {
+      "type": "Text",
+      "config": {
+        "label": "Is attendee?"
+      }
+    },
+    "link_anchor": {
+      "type": "Text",
+      "config": {
+        "label": "Link anchor"
+      }
+    },
+    "link_slug": {
+      "type": "Text",
+      "config": {
+        "label": "Link slug"
+      }
+    }
+  },
+  "Navigation Sub": {
+    "attendees_login": {
+      "type": "Text",
+      "config": {
+        "label": "Attendees Login"
+      }
+    },
+    "organizer_login": {
+      "type": "Text",
+      "config": {
+        "label": "Organizer Login"
+      }
+    },
+    "contact": {
+      "type": "Text",
+      "config": {
+        "label": "Contact"
+      }
+    },
+    "lang_current": {
+      "type": "Text",
+      "config": {
+        "label": "Lang current"
+      }
+    },
+    "lang_1": {
+      "type": "Text",
+      "config": {
+        "label": "Lang 1"
+      }
+    },
+    "lang_1_route": {
+      "type": "Text",
+      "config": {
+        "label": "lang_1_route"
+      }
+    },
+    "lang_2": {
+      "type": "Text",
+      "config": {
+        "label": "Lang 2"
+      }
+    },
+    "lang_2_route": {
+      "type": "Text",
+      "config": {
+        "label": "lang_2_route"
+      }
+    },
+    "lang_3": {
+      "type": "Text",
+      "config": {
+        "label": "Lang 3"
+      }
+    },
+    "lang_3_route": {
+      "type": "Text",
+      "config": {
+        "label": "lang_3_route"
+      }
+    },
+    "login_as": {
+      "type": "Text",
+      "config": {
+        "label": "Login as"
+      }
+    },
+    "notifications_title": {
+      "type": "Text",
+      "config": {
+        "label": "notifications_title"
+      }
+    },
+    "notification_plan_building_header": {
+      "type": "Text",
+      "config": {
+        "label": "notification_plan_building_header"
+      }
+    },
+    "notification_plan_building_subheader": {
+      "type": "Text",
+      "config": {
+        "label": "notification_plan_building_subheader"
+      }
+    },
+    "notification_plan_building_link": {
+      "type": "Text",
+      "config": {
+        "label": "notification_plan_building_link"
+      }
+    }
+  },
+  "Support": {
+    "title1": {
+      "type": "Text",
+      "config": {
+        "label": "Title"
+      }
+    }
+  },
+  "Corona": {
+    "corona_title": {
+      "type": "Text",
+      "config": {
+        "label": "Corona Title"
+      }
+    },
+    "corona_texts": {
+      "type": "Text",
+      "config": {
+        "label": "Corona Texts"
+      }
+    },
+    "corona_cta": {
+      "type": "Text",
+      "config": {
+        "label": "Corona CTA"
+      }
+    }
+  },
+  "Cookie banner": {
+    "tab_consent": {
+      "type": "Text",
+      "config": {
+        "label": "Tab Consent"
+      }
+    },
+    "consent_title": {
+      "type": "Text",
+      "config": {
+        "label": "Consent Title"
+      }
+    },
+    "consent_desc": {
+      "type": "Text",
+      "config": {
+        "label": "Consent Desc"
+      }
+    },
+    "details_title": {
+      "type": "Text",
+      "config": {
+        "label": "Details Title"
+      }
+    },
+    "details_desc": {
+      "type": "Text",
+      "config": {
+        "label": "Details Desc"
+      }
+    },
+    "tab_about": {
+      "type": "Text",
+      "config": {
+        "label": "Tab About"
+      }
+    },
+    "tab_details": {
+      "type": "Text",
+      "config": {
+        "label": "Tab Details"
+      }
+    },
+    "about_title": {
+      "type": "Text",
+      "config": {
+        "label": "About Title"
+      }
+    },
+    "about_desc": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+        "label": "About Desc"
+      }
+    },
+    "button_accept_all": {
+      "type": "Text",
+      "config": {
+        "label": "Button Accept All"
+      }
+    },
+    "button_refuse_all": {
+      "type": "Text",
+      "config": {
+        "label": "Button Refuse All"
+      }
+    },
+    "button_personalize": {
+      "type": "Text",
+      "config": {
+        "label": "Button Personalize"
+      }
+    },
+    "button_authorize": {
+      "type": "Text",
+      "config": {
+        "label": "Button Authorize"
+      }
+    }
+  }
+}

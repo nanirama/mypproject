@@ -1,0 +1,10 @@
+node_modules
+.cache
+public
+.idea
+src/localization/routes.json
+!.env.tpl
+.DS_Store
+storybook
+to-do.txt
+tmp_*
