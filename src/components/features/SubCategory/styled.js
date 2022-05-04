@@ -44,10 +44,10 @@ flex-direction: row;
 & > button{
     border:none;
     cursor:pointer;
-    background: rgba(255, 255, 255);border-radius: 75px;font-size: 13px;line-height: 18px;color: #637491;padding:10px 18px;
+    background: rgba(255, 255, 255);border-radius: 75px;font-size: 14px;line-height: 18px;font-weight: 700;color: #ADB8D4;padding:10px 18px;
 }
 & > button.active{
-    background: rgba(189, 207, 240, 0.15);
+    background: rgba(189, 207, 240, 0.15);color: #637491;
 }
 `
 export const SubTitle = styled.h5`
@@ -98,7 +98,7 @@ h6{font-size: 18px;line-height: 26px; color: #637491;font-weight: 400; margin-bo
 `
 export const CategoryBlock = styled.div`
 width:100%;
-float:left;
+float:left;margin-bottom:35px;
 @media screen and (min-width: 768px) {
     display:none;
 }
@@ -111,7 +111,7 @@ h2 {
     margin-bottom: 40px;
     font-weight: 300;
 }
-h6{font-size: 18px;line-height: 26px; color: #637491;font-weight: 400; margin-bottom:20px; margin-left:14px;}
+h6{font-size: 30px;line-height: 26px; color: #637491;font-weight:700; margin-bottom:20px; margin-left:14px;}
 
 .Collapsible{margin-bottom:15px;position:relative;
 span:after {content: "";position: absolute;right: 10px;top: 10px;width:40px;height:40px;
@@ -126,34 +126,36 @@ line-height: 42px; color: #262F3D;padding:10px 15px;width:100%;display: inline-b
   }
   
   .accordion_item {
-    border-top: 1px solid #9f9f9f;
+    border-top:0px solid #9f9f9f;
   }
   
   .button {
-    font-size: 16px;
-    background-color: #008593;
-    color: #fff;
+    font-size:20px;
+    background-color: #fafafa;
+    color: #262F3D;
     text-align: left;
-    font-weight: 700;
+    font-weight:900;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 8px;
+    padding: 13px 16px;
+    margin-bottom:9px;
     cursor: pointer;
     border: none;
+    border-radius: 5px;
   }
   
   .control {
-    width:40px !important;
-    height:40px !important;
+    width:38px !important;
+    height:38px !important;
     background: rgba(189, 207, 240, 0.15);
     border-radius: 50%;
     cursor:pointer;
-    background-position:center;
+    background-position:center center;
     background-repeat:no-repeat;
-    background-size:45%;
+    background-size:40%;
     background-image:url(${Arrow2});
     transition: transform .7s ease-in-out;
   }
@@ -163,12 +165,12 @@ line-height: 42px; color: #262F3D;padding:10px 15px;width:100%;display: inline-b
   }
   
   .answer {
-    background-color: #f7f7f7;
-    padding: 20px;
+    background-color: #fff;
+    padding: 20px 12px;
   }
   
   .accordion_item.active .button {
-    background-color: #105057;
+    background-color: #fafafa;
   }
   .answer_wrapper {
     height: 0;
