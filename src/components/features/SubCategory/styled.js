@@ -14,12 +14,12 @@ padding-bottom: 30px;
 export const CategoryListItems = styled.div`
 `
 export const TabsWrapper = styled.div`
-h4{font-size: 20px;line-height: 24px;color: #637491;font-weight:400; margin-bottom:20px;}
+h4{font-size: 20px;line-height: 24px;color: #637491;font-weight:400; margin-bottom:10px;}
 .tablist{
-    h4{color: #262F3D;font-weight:700}
+    h4{color: #262F3D;font-weight:700; margin-bottom:16px;}
 }
 
-h2{font-size: 36px;line-height: 42px;color: #262F3D;margin-bottom:40px;font-weight: 300;}
+h2{font-size: 36px;line-height: 42px;color: #262F3D;margin-bottom:40px;font-weight:700;}
 
 .react-tabs__tab{width:100%;border:none;font-weight: 400;font-size: 18px;line-height: 24px;color: #262F3D; margin-bottom:15px; padding:0;}
 .react-tabs__tab:focus{box-shadow:none;}
@@ -58,10 +58,8 @@ background: rgba(189, 207, 240, 0.15);border-radius: 75px;font-size: 13px;line-h
 `
 export const ItemBox = styled.div`
 margin-bottom:40px !important;
-p{font-weight: 300;font-size: 18px; line-height: 26px;color: #405463;
-    @media screen and (max-width: 991px) {
-        font-size: 16px;
-    }
+p{font-weight: 300;font-size: 16px; line-height: 24px;color: #405463;
+
 a{color:#00CC88; font-weight:700;}
 }
 a{color:#00CC88;font-weight:700;}
@@ -92,9 +90,9 @@ h2 {
     line-height: 42px;
     color: #262F3D;
     margin-bottom: 40px;
-    font-weight: 300;
+    font-weight:700;
 }
-h6{font-size: 18px;line-height: 26px; color: #637491;font-weight: 400; margin-bottom:20px; margin-left:2px;}
+h6{font-size:20px;line-height: 26px; color: #637491;font-weight: 400; margin-bottom:10px; margin-left:2px;}
 `
 export const CategoryBlock = styled.div`
 width:100%;

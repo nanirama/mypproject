@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const ItemBox = styled.div`
-margin-bottom:40px !important;
-p{font-weight: 300;font-size: 18px; line-height: 26px;color: #405463;
-    @media screen and (max-width: 991px) {
-        font-size: 16px;
-    }
+margin-bottom:40px !important; 
+@media screen and (min-width:1200px) {
+    padding-right: 8%;
+}
+p{font-weight: 300;font-size: 16px; line-height: 24px;color: #405463;
+    
 a{color:#00CC88; font-weight:700;}
 }
 a{color:#00CC88;font-weight:700;}

@@ -19,7 +19,6 @@ const HubSpotFormOuter = styled.div`
   @media screen and (max-width: 767px) {
     padding: 20px;
   }
-
   .form-columns-1,
   .form-columns-2 {
     max-width: 100%;
@@ -44,12 +43,10 @@ const HubSpotFormOuter = styled.div`
     -moz-border-radius: 4px;
     border-radius: 4px;
   }
-
   textarea {
     padding: 15px;
     height: 150px;
   }
-
   .input,
   .actions {
     margin: 0 10px !important;
@@ -62,27 +59,22 @@ const HubSpotFormOuter = styled.div`
     border: 0;
     color: #fff;
   }
-
   .hs-form select {
     background: url(${caret}) 97% no-repeat #fff;
   }
-
   .hs-dependent-field {
     margin-top: 10px;
   }
-
   .hs_submit {
     width: auto;
     display: flex;
     font-weight: 600;
     margin-top: 10px;
   }
-
   input[type="submit"],
   .hs_submit:hover {
     cursor: pointer;
   }
-
   .hs-error-msg {
     margin: 10px 0 10px 10px;
     color: red;

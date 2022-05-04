@@ -32,8 +32,8 @@ const FeatureSubCategory = ({ data, viewFeatures }) => {
                   <ul className="accordion" key={subindex}>
                     {subCats && <AccordionItem
                     data={subCats}
-                    onToggle={() => handleToggle(sub.features_sub_category.document.id)}
-                    active={clicked === sub.features_sub_category.document.id}
+                    onToggle={() => handleToggle(subindex)}
+                    active={clicked === subindex}
                     title={sub.features_sub_category.document.data.category_title.text}
                     />}                 
                   </ul>
